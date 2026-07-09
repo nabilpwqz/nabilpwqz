@@ -64,6 +64,14 @@ Constant iteration. Constant improvement.
 </p>
 
 ---
+### 📊 GitHub Stats
+
+- 🔢 Contributions: 1,250+ (last year)
+- 🔥 Streak: 45 days (Best: 120 days)
+- 💻 Top Languages: JavaScript, TypeScript, Python
+- 📦 Repositories: 25+ both public & confidential
+- ⭐ Stars Earned: 150+
+- 🔁 PRs Merged: 180+
 
 ## 🏆 Career Highlights
 
