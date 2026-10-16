@@ -74,12 +74,17 @@
   </g>
 
   <!-- Top Right Telemetry -->
-  <g transform="translate(820, 26)" text-anchor="start">
-    <circle cx="0" cy="-3" r="3.5" fill="#10b981"/>
-    <circle cx="0" cy="-3" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+  <g transform="translate(850, 26)" text-anchor="start">
+    <circle cx="0" cy="-3" r="3.5" fill="#10b981">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="-3" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
     <text x="14" y="0" class="mono hud-text">SYS_STATUS: ACTIVE [100%]</text>
     <text x="210" y="0" class="mono hud-text" fill="#64748b">|</text>
-    <text x="230" y="0" class="mono hud-text">LOC: DHAKA, BD</text>
+    <text x="228" y="0" class="mono hud-text">LOC: BD</text>
   </g>
 
   <!-- Corner Brackets -->
@@ -110,7 +115,7 @@
       <text x="8" y="4" class="mono chip-text">MERN ARCHITECTURE</text>
     </g>
 
-    <!-- Chip 2: Next.js 14+ Full-Stack -->
+    <!-- Chip 2: Next.js Full-Stack -->
     <g transform="translate(-195, 0)">
       <rect x="-86" y="-15" width="172" height="30" rx="7" fill="url(#chipBg)" stroke="#1e293b" stroke-width="1.2"/>
       <circle cx="-68" cy="0" r="3" fill="#38bdf8"/>

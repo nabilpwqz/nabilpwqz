@@ -62,15 +62,25 @@
   <g transform="translate(600, 68)" text-anchor="middle">
     <!-- Live Pulse Indicators -->
     <g transform="translate(-290, -4)">
-      <circle cx="0" cy="0" r="4" fill="#10b981"/>
-      <circle cx="0" cy="0" r="8" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+      <circle cx="0" cy="0" r="4" fill="#10b981">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4">
+        <animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <text y="2" class="mono footer-quote">CLEAN ARCHITECTURE // INTENTIONAL DESIGN // SCALABLE EXECUTION</text>
 
     <g transform="translate(290, -4)">
-      <circle cx="0" cy="0" r="4" fill="#10b981"/>
-      <circle cx="0" cy="0" r="8" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+      <circle cx="0" cy="0" r="4" fill="#10b981">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r="8" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4">
+        <animate attributeName="r" values="6;9;6" dur="2s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+      </circle>
     </g>
 
     <text y="32" class="mono footer-sub">FULL-STACK SOFTWARE ENGINEER &#x2022; BRAND ARCHITECT</text>
