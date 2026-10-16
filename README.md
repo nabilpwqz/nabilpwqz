@@ -38,8 +38,6 @@
     <a href="mailto:nabilpwqz@gmail.com">
       <img src="https://img.shields.io/badge/EMAIL-nabilpwqz%40gmail.com-e11d48?style=flat-square&logo=gmail&logoColor=white&labelColor=020617" alt="Email" />
     </a>
-    &nbsp;
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=nabilpwqz.nabilpwqz&left_text=VISITORS&left_color=%23020617&right_color=%230d9488" alt="Visitor Counter" />
   </p>
 </div>
 
@@ -142,86 +140,43 @@ A common friction point in product development is the communication barrier betw
   />
 </p>
 
-<table align="center" width="100%">
-  <thead>
-    <tr>
-      <th align="left" width="22%">Project &amp; Domain</th>
-      <th align="left" width="20%">Architecture &amp; Role</th>
-      <th align="left" width="23%">Technology Stack</th>
-      <th align="left" width="35%">Key Engineering Deliverables</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <strong>Tourism Platform</strong><br/>
-        <code>[PRODUCTION_APP]</code>
-      </td>
-      <td>
-        <strong>Full-Stack Architect</strong><br/>
-        <small>System Design &amp; Core APIs</small>
-      </td>
-      <td>
-        <code>Next.js 14</code> <code>Node.js</code><br/>
-        <code>MongoDB</code> <code>Tailwind</code>
-      </td>
-      <td>
-        Dynamic booking engine, geospatial indexing (2dsphere), server-side rendered routes, automated transactional notification pipelines
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>E-Commerce Engine</strong><br/>
-        <code>[COMMERCE_CORE]</code>
-      </td>
-      <td>
-        <strong>Backend &amp; UI Developer</strong><br/>
-        <small>Payments &amp; State Engine</small>
-      </td>
-      <td>
-        <code>React</code> <code>Node.js</code><br/>
-        <code>Express</code> <code>Stripe</code> <code>Redux</code>
-      </td>
-      <td>
-        JWT authentication lifecycle, atomic checkout flow, webhook-driven order state machine, administrative real-time analytics dashboard
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Real-Time Workspace</strong><br/>
-        <code>[COLLABORATIVE]</code>
-      </td>
-      <td>
-        <strong>Full-Stack Developer</strong><br/>
-        <small>Sockets &amp; Concurrent State</small>
-      </td>
-      <td>
-        <code>React</code> <code>Express</code><br/>
-        <code>WebSockets</code> <code>Tailwind</code>
-      </td>
-      <td>
-        Low-latency bi-directional messaging, distributed live presence tracking, role-based authorization (RBAC) across concurrent rooms
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <strong>Brand Identity Systems</strong><br/>
-        <code>[DESIGN_SYSTEM]</code>
-      </td>
-      <td>
-        <strong>Visual Designer &amp; Director</strong><br/>
-        <small>Brand Architecture &amp; UI</small>
-      </td>
-      <td>
-        <code>Figma</code> <code>Illustrator</code><br/>
-        <code>Photoshop</code> <code>Design Tokens</code>
-      </td>
-      <td>
-        Comprehensive brand guidelines, scalable vector systems, design token specifications, digital design libraries deployed for 50+ clients
-      </td>
-    </tr>
-  </tbody>
-</table>
+### 01 // Tourism Platform
+> **Domain &amp; Role:** Full-Stack Architect &bull; System Design &amp; Core APIs  
+> **Classification:** `[PRODUCTION_APP]` &bull; `ACTIVE DEPLOYMENT`  
+> **Tech Stack:** `Next.js 14` &bull; `Node.js` &bull; `MongoDB` &bull; `TailwindCSS`
+- **Dynamic Booking Engine:** Calendar availability synchronization with atomic slot locking pipelines.
+- **Geospatial Querying:** MongoDB `2dsphere` spatial indexing for sub-50ms radius location discovery.
+- **SSR/ISR Route Caching:** Server-side rendered dynamic routes with automated transactional notification queues.
+
+---
+
+### 02 // E-Commerce Engine
+> **Domain &amp; Role:** Backend &amp; UI Developer &bull; Payments &amp; State Engine  
+> **Classification:** `[COMMERCE_CORE]` &bull; `HIGH-CONVERSION`  
+> **Tech Stack:** `React` &bull; `Node.js` &bull; `Express` &bull; `Stripe API` &bull; `Redux Toolkit`
+- **Defensive Auth Lifecycle:** Cryptographic JWT token rotation, refresh mechanisms, and secure HTTP-only cookies.
+- **Zero-Downtime Payments:** Atomic checkout orchestration with idempotent Stripe webhook listeners.
+- **Telemetry Dashboard:** Administrative analytics command center for live revenue and order state machines.
+
+---
+
+### 03 // Real-Time Workspace
+> **Domain &amp; Role:** Full-Stack Developer &bull; Sockets &amp; Concurrent State  
+> **Classification:** `[COLLABORATIVE]` &bull; `LOW-LATENCY`  
+> **Tech Stack:** `React` &bull; `Express` &bull; `WebSockets` &bull; `TailwindCSS`
+- **Bi-Directional Messaging:** Sub-50ms message propagation over persistent WebSocket connections.
+- **Presence &amp; State Sync:** Distributed user presence tracking, typing indicators, and heartbeat connection monitoring.
+- **Access Authorization:** Fine-grained Role-Based Authorization (RBAC) across concurrent collaborative workspaces.
+
+---
+
+### 04 // Brand Identity Systems
+> **Domain &amp; Role:** Visual Designer &amp; Director &bull; Brand Architecture &amp; UI  
+> **Classification:** `[DESIGN_SYSTEM]` &bull; `50+ CLIENTS DEPLOYED`  
+> **Tech Stack:** `Figma` &bull; `Adobe Illustrator` &bull; `Photoshop` &bull; `Design Tokens`
+- **Comprehensive Brand Architecture:** Complete identity guidelines, typographic hierarchies, and strict optical balance.
+- **Vector Mark Systems:** Mathematical logo marks and scalable vector asset libraries across digital platforms.
+- **Tokenized UI Pipeline:** Figma design tokens translated directly into semantic, zero-debt React/Next.js styles.
 
 ---
 
