@@ -10,7 +10,7 @@
   />
 
   <p align="center">
-    <code>LOCATION: DHAKA, BD [23.8103° N, 90.4125° E]</code>
+    <code>LOCATION: BD [23.8103° N, 90.4125° E]</code>
     &nbsp;&bull;&nbsp;
     <code>STACK: MERN / NEXT.JS / DISTRIBUTED APIs</code>
     &nbsp;&bull;&nbsp;
@@ -46,10 +46,10 @@
 ---
 
 <!-- ============================================================== -->
-<!--                  01 // PROFILE & PHILOSOPHY                   -->
+<!--                  PROFILE & PHILOSOPHY                          -->
 <!-- ============================================================== -->
 
-## 01 // Profile & Core Philosophy
+## Profile & Core Philosophy
 
 <p align="center">
   <img 
@@ -70,10 +70,10 @@
 ---
 
 <!-- ============================================================== -->
-<!--             02 // DUAL COMPETENCY: CODE + DESIGN               -->
+<!--             DUAL COMPETENCY: CODE + DESIGN                     -->
 <!-- ============================================================== -->
 
-## 02 // Engineering & Design Convergence
+## Engineering & Design Convergence
 
 A common friction point in product development is the communication barrier between engineering constraints and design intent. My background synthesizes 5+ years of graphic design and brand identity with rigorous full-stack development.
 
@@ -92,10 +92,10 @@ A common friction point in product development is the communication barrier betw
 ---
 
 <!-- ============================================================== -->
-<!--                   03 // TECHNICAL STACK                        -->
+<!--                   TECHNICAL STACK                              -->
 <!-- ============================================================== -->
 
-## 03 // Technical Competencies
+## Technical Competencies
 
 <div align="center">
 
@@ -129,10 +129,18 @@ A common friction point in product development is the communication barrier betw
 ---
 
 <!-- ============================================================== -->
-<!--                04 // PROJECT HIGHLIGHTS & ARCHITECTURE         -->
+<!--                PROJECT HIGHLIGHTS & ARCHITECTURE               -->
 <!-- ============================================================== -->
 
-## 04 // Architecture Highlights & Case Studies
+## Architecture Highlights & Case Studies
+
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/project-matrix.svg" 
+    width="100%" 
+    alt="Production Architecture &amp; Case Studies Matrix"
+  />
+</p>
 
 <table align="center" width="100%">
   <thead>
@@ -218,10 +226,10 @@ A common friction point in product development is the communication barrier betw
 ---
 
 <!-- ============================================================== -->
-<!--             05 // PRODUCTION BENCHMARKS & GITHUB METRICS       -->
+<!--             PRODUCTION BENCHMARKS & GITHUB METRICS             -->
 <!-- ============================================================== -->
 
-## 05 // Production Benchmarks & GitHub Metrics
+## Production Benchmarks & GitHub Metrics
 
 <div align="center">
   <table border="0" cellpadding="0" cellspacing="0">
@@ -284,10 +292,10 @@ A common friction point in product development is the communication barrier betw
 ---
 
 <!-- ============================================================== -->
-<!--                   06 // CONNECT & ENGAGEMENT                   -->
+<!--                   CONNECT & ENGAGEMENT                         -->
 <!-- ============================================================== -->
 
-## 06 // Connect & Professional Inquiries
+## Connect & Professional Inquiries
 
 Open to conversations regarding full-stack software engineering positions, architectural consulting, and technical collaborations.
 
