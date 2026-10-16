@@ -170,42 +170,13 @@ A common friction point in product development is the communication barrier betw
 
 <br/>
 
-<table align="center" width="100%">
-  <thead>
-    <tr>
-      <th align="left" width="28%">Engineering Metric</th>
-      <th align="left" width="22%">Production SLA</th>
-      <th align="left" width="50%">Architecture &amp; Implementation Standard</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>API Latency &amp; Throughput</strong></td>
-      <td><code>P95 &lt; 100ms</code></td>
-      <td>Multi-tier Redis caching, indexed MongoDB pipelines &amp; connection pooling</td>
-    </tr>
-    <tr>
-      <td><strong>Architecture Type Safety</strong></td>
-      <td><code>100% Strict Typing</code></td>
-      <td>End-to-end TypeScript contracts, Zod runtime validation &amp; defensive boundaries</td>
-    </tr>
-    <tr>
-      <td><strong>Core Web Vitals</strong></td>
-      <td><code>98 - 100 Score</code></td>
-      <td>Next.js SSR/SSG caching, zero layout shifts, asset compression &amp; lazy hydration</td>
-    </tr>
-    <tr>
-      <td><strong>Real-Time Synchronization</strong></td>
-      <td><code>Sub-50ms Latency</code></td>
-      <td>Bi-directional WebSockets, Redis Pub/Sub brokers &amp; distributed event queues</td>
-    </tr>
-    <tr>
-      <td><strong>Security &amp; Auth Standard</strong></td>
-      <td><code>Zero-Trust Model</code></td>
-      <td>Cryptographic JWT rotation, atomic checkout states &amp; role-based access control (RBAC)</td>
-    </tr>
-  </tbody>
-</table>
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/production-benchmarks.svg" 
+    width="100%" 
+    alt="Engineering Metrics &amp; Production SLAs" 
+  />
+</p>
 
 ---
 
