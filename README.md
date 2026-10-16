@@ -51,29 +51,14 @@
 
 ## 01 // Profile & Core Philosophy
 
-```typescript
-interface FullStackEngineer {
-  readonly identity: "S Sindid Ahmed Nabil";
-  readonly location: "Dhaka, Bangladesh [23.8103° N, 90.4125° E]";
-  readonly discipline: "Full-Stack Software Engineering";
-  readonly specialization: ["MERN Architecture", "Next.js Full-Stack", "Scalable REST/GraphQL APIs"];
-  readonly secondaryAdvantage: "5+ Years Brand Identity & Visual Design Systems";
-  readonly coreValues: ["Clean Code", "Defensive Architecture", "Performance Optimization", "High UX Fidelity"];
-  readonly status: "Available for Software Engineering Roles & High-Impact Collaborations";
-}
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/profile-card.svg" 
+    width="100%" 
+    alt="S Sindid Ahmed Nabil - Profile &amp; Core Philosophy Manifesto"
+  />
+</p>
 
-const SoftwareEngineer: FullStackEngineer = {
-  identity: "S Sindid Ahmed Nabil",
-  location: "Dhaka, Bangladesh [23.8103° N, 90.4125° E]",
-  discipline: "Full-Stack Software Engineering",
-  specialization: ["MERN Architecture", "Next.js Full-Stack", "Scalable REST/GraphQL APIs"],
-  secondaryAdvantage: "5+ Years Brand Identity & Visual Design Systems",
-  coreValues: ["Clean Code", "Defensive Architecture", "Performance Optimization", "High UX Fidelity"],
-  status: "Available for Software Engineering Roles & High-Impact Collaborations"
-};
-```
-
-<br/>
 
 <table align="center" width="100%">
   <tr>
