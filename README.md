@@ -140,43 +140,6 @@ A common friction point in product development is the communication barrier betw
   />
 </p>
 
-### 01 // Tourism Platform
-> **Domain &amp; Role:** Full-Stack Architect &bull; System Design &amp; Core APIs  
-> **Classification:** `[PRODUCTION_APP]` &bull; `ACTIVE DEPLOYMENT`  
-> **Tech Stack:** `Next.js 14` &bull; `Node.js` &bull; `MongoDB` &bull; `TailwindCSS`
-- **Dynamic Booking Engine:** Calendar availability synchronization with atomic slot locking pipelines.
-- **Geospatial Querying:** MongoDB `2dsphere` spatial indexing for sub-50ms radius location discovery.
-- **SSR/ISR Route Caching:** Server-side rendered dynamic routes with automated transactional notification queues.
-
----
-
-### 02 // E-Commerce Engine
-> **Domain &amp; Role:** Backend &amp; UI Developer &bull; Payments &amp; State Engine  
-> **Classification:** `[COMMERCE_CORE]` &bull; `HIGH-CONVERSION`  
-> **Tech Stack:** `React` &bull; `Node.js` &bull; `Express` &bull; `Stripe API` &bull; `Redux Toolkit`
-- **Defensive Auth Lifecycle:** Cryptographic JWT token rotation, refresh mechanisms, and secure HTTP-only cookies.
-- **Zero-Downtime Payments:** Atomic checkout orchestration with idempotent Stripe webhook listeners.
-- **Telemetry Dashboard:** Administrative analytics command center for live revenue and order state machines.
-
----
-
-### 03 // Real-Time Workspace
-> **Domain &amp; Role:** Full-Stack Developer &bull; Sockets &amp; Concurrent State  
-> **Classification:** `[COLLABORATIVE]` &bull; `LOW-LATENCY`  
-> **Tech Stack:** `React` &bull; `Express` &bull; `WebSockets` &bull; `TailwindCSS`
-- **Bi-Directional Messaging:** Sub-50ms message propagation over persistent WebSocket connections.
-- **Presence &amp; State Sync:** Distributed user presence tracking, typing indicators, and heartbeat connection monitoring.
-- **Access Authorization:** Fine-grained Role-Based Authorization (RBAC) across concurrent collaborative workspaces.
-
----
-
-### 04 // Brand Identity Systems
-> **Domain &amp; Role:** Visual Designer &amp; Director &bull; Brand Architecture &amp; UI  
-> **Classification:** `[DESIGN_SYSTEM]` &bull; `50+ CLIENTS DEPLOYED`  
-> **Tech Stack:** `Figma` &bull; `Adobe Illustrator` &bull; `Photoshop` &bull; `Design Tokens`
-- **Comprehensive Brand Architecture:** Complete identity guidelines, typographic hierarchies, and strict optical balance.
-- **Vector Mark Systems:** Mathematical logo marks and scalable vector asset libraries across digital platforms.
-- **Tokenized UI Pipeline:** Figma design tokens translated directly into semantic, zero-debt React/Next.js styles.
 
 ---
 

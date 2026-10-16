@@ -1,22 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
-    <linearGradient id="matrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="pMatrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="40%" stop-color="#071522"/>
-      <stop offset="75%" stop-color="#04201c"/>
+      <stop offset="35%" stop-color="#071524"/>
+      <stop offset="70%" stop-color="#04221d"/>
       <stop offset="100%" stop-color="#020617"/>
     </linearGradient>
 
-    <!-- Radial Accent Glow -->
-    <radialGradient id="matrixGlow" cx="50%" cy="30%" r="65%">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.26"/>
-      <stop offset="60%" stop-color="#14b8a6" stop-opacity="0.04"/>
+    <!-- Radial Glow -->
+    <radialGradient id="pMatrixGlow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#14b8a6" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Outer Border Gradient -->
-    <linearGradient id="matrixBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Border Gradient -->
+    <linearGradient id="pMatrixBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#1e293b"/>
       <stop offset="25%" stop-color="#0d9488"/>
       <stop offset="50%" stop-color="#2dd4bf"/>
@@ -24,35 +24,35 @@
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
-    <!-- Project Card Gradients -->
-    <linearGradient id="pCard1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#052520"/>
-      <stop offset="100%" stop-color="#031313"/>
+    <!-- Individual Card Gradients -->
+    <linearGradient id="cBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#052620"/>
+      <stop offset="100%" stop-color="#021211"/>
     </linearGradient>
 
-    <linearGradient id="pCard2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#071d2e"/>
-      <stop offset="100%" stop-color="#04101c"/>
+    <linearGradient id="cBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061f31"/>
+      <stop offset="100%" stop-color="#03101b"/>
     </linearGradient>
 
-    <linearGradient id="pCard3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#072224"/>
-      <stop offset="100%" stop-color="#031215"/>
+    <linearGradient id="cBg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062325"/>
+      <stop offset="100%" stop-color="#021214"/>
     </linearGradient>
 
-    <linearGradient id="pCard4" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e1026"/>
-      <stop offset="100%" stop-color="#0e0716"/>
+    <linearGradient id="cBg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f0f29"/>
+      <stop offset="100%" stop-color="#0d0514"/>
     </linearGradient>
 
-    <!-- Chip Background -->
-    <linearGradient id="pChipBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c1724"/>
-      <stop offset="100%" stop-color="#050d17"/>
+    <!-- Chip Gradient -->
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1626"/>
+      <stop offset="100%" stop-color="#050e18"/>
     </linearGradient>
 
-    <!-- Dot Grid Pattern -->
-    <pattern id="pGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+    <!-- Grid Pattern -->
+    <pattern id="matrixPattern" width="24" height="24" patternUnits="userSpaceOnUse">
       <circle cx="2" cy="2" r="0.75" fill="#14b8a6" fill-opacity="0.14"/>
     </pattern>
   </defs>
@@ -60,20 +60,18 @@
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    .proj-title { font-size: 15px; font-weight: 800; fill: #f8fafc; letter-spacing: 0.5px; }
-    .proj-tag { font-size: 9px; font-weight: 700; letter-spacing: 1.5px; }
-    .role-text { font-size: 11.5px; font-weight: 700; }
-    .role-sub { font-size: 10px; fill: #94a3b8; font-weight: 500; }
-    .deliv-text { font-size: 10.5px; fill: #cbd5e1; font-weight: 400; line-height: 1.5; }
-    .stack-chip { font-size: 9.5px; fill: #94a3b8; font-weight: 600; letter-spacing: 0.5px; }
-    .bottom-ribbon { font-size: 10px; fill: #cbd5e1; letter-spacing: 1.5px; font-weight: 600; }
+    .card-title { font-size: 15px; font-weight: 800; fill: #f8fafc; letter-spacing: 0.5px; }
+    .tag-badge { font-size: 9px; font-weight: 700; letter-spacing: 1.2px; }
+    .role-lead { font-size: 11.5px; font-weight: 700; letter-spacing: 0.5px; }
+    .deliv-line { font-size: 10.5px; fill: #cbd5e1; font-weight: 400; }
+    .chip-style { font-size: 9.5px; fill: #94a3b8; font-weight: 600; letter-spacing: 0.5px; }
   </style>
 
-  <!-- Base Panels -->
-  <rect width="998" height="518" x="1" y="1" rx="14" fill="url(#matrixBg)"/>
-  <rect width="998" height="518" x="1" y="1" rx="14" fill="url(#matrixGlow)"/>
-  <rect width="998" height="518" x="1" y="1" rx="14" fill="url(#pGrid)"/>
-  <rect width="998" height="518" x="1" y="1" rx="14" fill="none" stroke="url(#matrixBorder)" stroke-width="1.5"/>
+  <!-- Container Box -->
+  <rect width="998" height="558" x="1" y="1" rx="14" fill="url(#pMatrixBg)"/>
+  <rect width="998" height="558" x="1" y="1" rx="14" fill="url(#pMatrixGlow)"/>
+  <rect width="998" height="558" x="1" y="1" rx="14" fill="url(#matrixPattern)"/>
+  <rect width="998" height="558" x="1" y="1" rx="14" fill="none" stroke="url(#pMatrixBorder)" stroke-width="1.5"/>
 
   <!-- Top Titlebar Strip -->
   <rect x="1" y="1" width="998" height="40" rx="14" fill="#040b15" fill-opacity="0.9"/>
@@ -84,218 +82,218 @@
     <circle cx="0" cy="0" r="4.5" fill="#ef4444" fill-opacity="0.85"/>
     <circle cx="15" cy="0" r="4.5" fill="#f59e0b" fill-opacity="0.85"/>
     <circle cx="30" cy="0" r="4.5" fill="#10b981" fill-opacity="0.85"/>
-    <text x="52" y="3.5" class="mono" font-size="11" fill="#64748b" letter-spacing="1px">architecture.matrix.ts // PRODUCTION CASE STUDIES &amp; DELIVERABLES</text>
+    <text x="52" y="3.5" class="mono" font-size="11" fill="#64748b" letter-spacing="1px">case_studies.spec.ts // PRODUCTION DELIVERABLES &amp; ARCHITECTURAL IMPACT</text>
   </g>
 
   <!-- Top Right Status -->
   <g transform="translate(970, 21)" text-anchor="end">
     <circle cx="-135" cy="0" r="3.5" fill="#10b981"/>
     <circle cx="-135" cy="0" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
-    <text x="-120" y="3.5" class="mono" font-size="10" fill="#2dd4bf" font-weight="700" letter-spacing="1.5px">PORTFOLIO: 4 CORE PLATFORMS</text>
+    <text x="-120" y="3.5" class="mono" font-size="10" fill="#2dd4bf" font-weight="700" letter-spacing="1.5px">4 ENTERPRISE PLATFORMS</text>
   </g>
 
   <!-- Corner Brackets -->
   <g stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.5">
     <path d="M 18 56 L 18 48 L 26 48"/>
     <path d="M 982 56 L 982 48 L 974 48"/>
-    <path d="M 18 498 L 18 506 L 26 506"/>
-    <path d="M 982 498 L 982 506 L 974 506"/>
+    <path d="M 18 538 L 18 546 L 26 546"/>
+    <path d="M 982 538 L 982 546 L 974 546"/>
   </g>
 
-  <!-- ================= GRID OF 4 PROJECT CARDS ================= -->
+  <!-- ================= 4 ARCHITECTURAL CASE STUDIES ================= -->
 
-  <!-- CARD 1: Tourism Platform (Top-Left) -->
-  <g transform="translate(30, 60)">
-    <rect width="455" height="195" rx="10" fill="url(#pCard1)" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.7"/>
-    <!-- Header strip -->
-    <rect x="0" y="0" width="455" height="36" rx="10" fill="#04221c" fill-opacity="0.75"/>
+  <!-- CARD 1: 01 // Tourism Platform (Top-Left) -->
+  <g transform="translate(30, 58)">
+    <rect width="455" height="215" rx="10" fill="url(#cBg1)" stroke="#0d9488" stroke-width="1.2" stroke-opacity="0.75"/>
+    <rect x="0" y="0" width="455" height="36" rx="10" fill="#04221c" fill-opacity="0.8"/>
     <line x1="0" y1="36" x2="455" y2="36" stroke="#1e293b" stroke-width="1"/>
-    <!-- Title & Badge -->
+
+    <!-- Title & Status -->
     <circle cx="20" cy="18" r="4" fill="#10b981"/>
-    <text x="34" y="22" class="sans proj-title">Tourism Platform</text>
-    <rect x="330" y="8" width="112" height="20" rx="4" fill="#021f19" stroke="#10b981" stroke-width="0.8"/>
-    <text x="386" y="22" text-anchor="middle" class="mono proj-tag" fill="#10b981">[PRODUCTION_APP]</text>
+    <text x="34" y="22" class="sans card-title">01 // Tourism Platform</text>
+    <rect x="290" y="8" width="152" height="20" rx="4" fill="#021f19" stroke="#10b981" stroke-width="0.8"/>
+    <text x="366" y="22" text-anchor="middle" class="mono tag-badge" fill="#10b981">[PRODUCTION_APP] &#x2022; ACTIVE</text>
 
-    <!-- Role & Arch Subheader -->
-    <g transform="translate(20, 56)">
-      <text y="0" class="mono role-text" fill="#2dd4bf">Full-Stack Architect</text>
-      <text x="175" y="0" class="mono role-sub">| System Design &amp; Core APIs</text>
+    <!-- Role Metadata -->
+    <g transform="translate(18, 56)">
+      <text y="0" class="mono role-lead" fill="#2dd4bf">Full-Stack Architect</text>
+      <text x="175" y="0" class="mono" font-size="10.5" fill="#94a3b8">| System Design &amp; Core APIs</text>
     </g>
 
-    <!-- Deliverables Bullet Points -->
-    <g transform="translate(20, 78)">
-      <circle cx="3" cy="-4" r="2" fill="#2dd4bf"/>
-      <text x="14" y="0" class="sans deliv-text">Dynamic booking engine with real-time slot locking</text>
+    <!-- Key Deliverables -->
+    <g transform="translate(18, 76)">
+      <circle cx="4" cy="-3" r="2" fill="#2dd4bf"/>
+      <text x="14" y="0" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Dynamic Booking Engine:</tspan> Calendar sync &amp; atomic slot locking</text>
 
-      <circle cx="3" cy="16" r="2" fill="#2dd4bf"/>
-      <text x="14" y="20" class="sans deliv-text">Geospatial 2dsphere indexing &amp; high-throughput search</text>
+      <circle cx="4" cy="18" r="2" fill="#2dd4bf"/>
+      <text x="14" y="21" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Geospatial Querying:</tspan> MongoDB 2dsphere indexing for sub-50ms radius</text>
 
-      <circle cx="3" cy="36" r="2" fill="#2dd4bf"/>
-      <text x="14" y="40" class="sans deliv-text">Server-side rendered routes (SSR/ISR) &amp; automated notification queues</text>
+      <circle cx="4" cy="39" r="2" fill="#2dd4bf"/>
+      <text x="14" y="42" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">SSR/ISR Route Caching:</tspan> Rendered routes &amp; automated notification queues</text>
     </g>
 
     <!-- Tech Stack Chips -->
-    <g transform="translate(20, 150)">
-      <rect x="0" y="0" width="80" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="40" y="15" text-anchor="middle" class="mono stack-chip">Next.js 14</text>
+    <g transform="translate(18, 172)">
+      <rect x="0" y="0" width="82" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="41" y="16" text-anchor="middle" class="mono chip-style">Next.js 14</text>
 
-      <rect x="88" y="0" width="70" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="123" y="15" text-anchor="middle" class="mono stack-chip">Node.js</text>
+      <rect x="90" y="0" width="70" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="125" y="16" text-anchor="middle" class="mono chip-style">Node.js</text>
 
-      <rect x="166" y="0" width="78" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="205" y="15" text-anchor="middle" class="mono stack-chip">MongoDB</text>
+      <rect x="168" y="0" width="80" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="208" y="16" text-anchor="middle" class="mono chip-style">MongoDB</text>
 
-      <rect x="252" y="0" width="74" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="289" y="15" text-anchor="middle" class="mono stack-chip">Tailwind</text>
+      <rect x="256" y="0" width="78" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="295" y="16" text-anchor="middle" class="mono chip-style">Tailwind</text>
     </g>
   </g>
 
-  <!-- CARD 2: E-Commerce Engine (Top-Right) -->
-  <g transform="translate(515, 60)">
-    <rect width="455" height="195" rx="10" fill="url(#pCard2)" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.7"/>
-    <!-- Header strip -->
-    <rect x="0" y="0" width="455" height="36" rx="10" fill="#041f33" fill-opacity="0.75"/>
+  <!-- CARD 2: 02 // E-Commerce Engine (Top-Right) -->
+  <g transform="translate(515, 58)">
+    <rect width="455" height="215" rx="10" fill="url(#cBg2)" stroke="#0284c7" stroke-width="1.2" stroke-opacity="0.75"/>
+    <rect x="0" y="0" width="455" height="36" rx="10" fill="#041f33" fill-opacity="0.8"/>
     <line x1="0" y1="36" x2="455" y2="36" stroke="#1e293b" stroke-width="1"/>
-    <!-- Title & Badge -->
+
+    <!-- Title & Status -->
     <circle cx="20" cy="18" r="4" fill="#38bdf8"/>
-    <text x="34" y="22" class="sans proj-title">E-Commerce Engine</text>
-    <rect x="318" y="8" width="124" height="20" rx="4" fill="#031b2e" stroke="#38bdf8" stroke-width="0.8"/>
-    <text x="380" y="22" text-anchor="middle" class="mono proj-tag" fill="#38bdf8">[COMMERCE_CORE]</text>
+    <text x="34" y="22" class="sans card-title">02 // E-Commerce Engine</text>
+    <rect x="276" y="8" width="166" height="20" rx="4" fill="#031b2e" stroke="#38bdf8" stroke-width="0.8"/>
+    <text x="359" y="22" text-anchor="middle" class="mono tag-badge" fill="#38bdf8">[COMMERCE_CORE] &#x2022; SCALE</text>
 
-    <!-- Role & Arch Subheader -->
-    <g transform="translate(20, 56)">
-      <text y="0" class="mono role-text" fill="#38bdf8">Backend &amp; UI Developer</text>
-      <text x="200" y="0" class="mono role-sub">| Payments &amp; State Engine</text>
+    <!-- Role Metadata -->
+    <g transform="translate(18, 56)">
+      <text y="0" class="mono role-lead" fill="#38bdf8">Backend &amp; UI Developer</text>
+      <text x="195" y="0" class="mono" font-size="10.5" fill="#94a3b8">| Payments &amp; State Engine</text>
     </g>
 
-    <!-- Deliverables Bullet Points -->
-    <g transform="translate(20, 78)">
-      <circle cx="3" cy="-4" r="2" fill="#38bdf8"/>
-      <text x="14" y="0" class="sans deliv-text">Cryptographic JWT authentication &amp; rotating refresh lifecycle</text>
+    <!-- Key Deliverables -->
+    <g transform="translate(18, 76)">
+      <circle cx="4" cy="-3" r="2" fill="#38bdf8"/>
+      <text x="14" y="0" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Defensive Auth Lifecycle:</tspan> JWT token rotation &amp; secure HTTP cookies</text>
 
-      <circle cx="3" cy="16" r="2" fill="#38bdf8"/>
-      <text x="14" y="20" class="sans deliv-text">Atomic checkout flow &amp; idempotent Stripe webhook reconciliation</text>
+      <circle cx="4" cy="18" r="2" fill="#38bdf8"/>
+      <text x="14" y="21" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Zero-Downtime Payments:</tspan> Atomic checkout &amp; idempotent Stripe webhooks</text>
 
-      <circle cx="3" cy="36" r="2" fill="#38bdf8"/>
-      <text x="14" y="40" class="sans deliv-text">Administrative real-time analytics dashboard with revenue metrics</text>
+      <circle cx="4" cy="39" r="2" fill="#38bdf8"/>
+      <text x="14" y="42" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Telemetry Dashboard:</tspan> Admin analytics command center for order state</text>
     </g>
 
     <!-- Tech Stack Chips -->
-    <g transform="translate(20, 150)">
-      <rect x="0" y="0" width="55" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="27.5" y="15" text-anchor="middle" class="mono stack-chip">React</text>
+    <g transform="translate(18, 172)">
+      <rect x="0" y="0" width="58" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="29" y="16" text-anchor="middle" class="mono chip-style">React</text>
 
-      <rect x="63" y="0" width="68" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="97" y="15" text-anchor="middle" class="mono stack-chip">Node.js</text>
+      <rect x="66" y="0" width="70" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="101" y="16" text-anchor="middle" class="mono chip-style">Node.js</text>
 
-      <rect x="139" y="0" width="65" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="171.5" y="15" text-anchor="middle" class="mono stack-chip">Express</text>
+      <rect x="144" y="0" width="68" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="178" y="16" text-anchor="middle" class="mono chip-style">Express</text>
 
-      <rect x="212" y="0" width="60" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="242" y="15" text-anchor="middle" class="mono stack-chip">Stripe</text>
+      <rect x="220" y="0" width="62" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="251" y="16" text-anchor="middle" class="mono chip-style">Stripe</text>
 
-      <rect x="280" y="0" width="56" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="308" y="15" text-anchor="middle" class="mono stack-chip">Redux</text>
+      <rect x="290" y="0" width="60" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="320" y="16" text-anchor="middle" class="mono chip-style">Redux</text>
     </g>
   </g>
 
-  <!-- CARD 3: Real-Time Workspace (Bottom-Left) -->
-  <g transform="translate(30, 270)">
-    <rect width="455" height="195" rx="10" fill="url(#pCard3)" stroke="#14b8a6" stroke-width="1.2" stroke-opacity="0.7"/>
-    <!-- Header strip -->
-    <rect x="0" y="0" width="455" height="36" rx="10" fill="#042021" fill-opacity="0.75"/>
+  <!-- CARD 3: 03 // Real-Time Workspace (Bottom-Left) -->
+  <g transform="translate(30, 290)">
+    <rect width="455" height="215" rx="10" fill="url(#cBg3)" stroke="#14b8a6" stroke-width="1.2" stroke-opacity="0.75"/>
+    <rect x="0" y="0" width="455" height="36" rx="10" fill="#042021" fill-opacity="0.8"/>
     <line x1="0" y1="36" x2="455" y2="36" stroke="#1e293b" stroke-width="1"/>
-    <!-- Title & Badge -->
+
+    <!-- Title & Status -->
     <circle cx="20" cy="18" r="4" fill="#2dd4bf"/>
-    <text x="34" y="22" class="sans proj-title">Real-Time Workspace</text>
-    <rect x="328" y="8" width="114" height="20" rx="4" fill="#021c1d" stroke="#2dd4bf" stroke-width="0.8"/>
-    <text x="385" y="22" text-anchor="middle" class="mono proj-tag" fill="#2dd4bf">[COLLABORATIVE]</text>
+    <text x="34" y="22" class="sans card-title">03 // Real-Time Workspace</text>
+    <rect x="274" y="8" width="168" height="20" rx="4" fill="#021c1d" stroke="#2dd4bf" stroke-width="0.8"/>
+    <text x="358" y="22" text-anchor="middle" class="mono tag-badge" fill="#2dd4bf">[COLLABORATIVE] &#x2022; &lt;50MS</text>
 
-    <!-- Role & Arch Subheader -->
-    <g transform="translate(20, 56)">
-      <text y="0" class="mono role-text" fill="#2dd4bf">Full-Stack Developer</text>
-      <text x="185" y="0" class="mono role-sub">| Sockets &amp; Concurrent State</text>
+    <!-- Role Metadata -->
+    <g transform="translate(18, 56)">
+      <text y="0" class="mono role-lead" fill="#2dd4bf">Full-Stack Developer</text>
+      <text x="180" y="0" class="mono" font-size="10.5" fill="#94a3b8">| Sockets &amp; Concurrent State</text>
     </g>
 
-    <!-- Deliverables Bullet Points -->
-    <g transform="translate(20, 78)">
-      <circle cx="3" cy="-4" r="2" fill="#2dd4bf"/>
-      <text x="14" y="0" class="sans deliv-text">Sub-50ms bi-directional messaging over persistent WebSockets</text>
+    <!-- Key Deliverables -->
+    <g transform="translate(18, 76)">
+      <circle cx="4" cy="-3" r="2" fill="#2dd4bf"/>
+      <text x="14" y="0" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Bi-Directional Messaging:</tspan> Sub-50ms propagation via persistent WebSockets</text>
 
-      <circle cx="3" cy="16" r="2" fill="#2dd4bf"/>
-      <text x="14" y="20" class="sans deliv-text">Distributed live user presence tracking &amp; heartbeat sync</text>
+      <circle cx="4" cy="18" r="2" fill="#2dd4bf"/>
+      <text x="14" y="21" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Presence &amp; State Sync:</tspan> Live presence tracking &amp; heartbeat monitoring</text>
 
-      <circle cx="3" cy="36" r="2" fill="#2dd4bf"/>
-      <text x="14" y="40" class="sans deliv-text">Fine-grained role-based authorization (RBAC) across channels</text>
+      <circle cx="4" cy="39" r="2" fill="#2dd4bf"/>
+      <text x="14" y="42" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Access Authorization:</tspan> Fine-grained RBAC across concurrent workspaces</text>
     </g>
 
     <!-- Tech Stack Chips -->
-    <g transform="translate(20, 150)">
-      <rect x="0" y="0" width="55" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="27.5" y="15" text-anchor="middle" class="mono stack-chip">React</text>
+    <g transform="translate(18, 172)">
+      <rect x="0" y="0" width="58" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="29" y="16" text-anchor="middle" class="mono chip-style">React</text>
 
-      <rect x="63" y="0" width="68" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="97" y="15" text-anchor="middle" class="mono stack-chip">Express</text>
+      <rect x="66" y="0" width="70" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="101" y="16" text-anchor="middle" class="mono chip-style">Express</text>
 
-      <rect x="139" y="0" width="94" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="186" y="15" text-anchor="middle" class="mono stack-chip">WebSockets</text>
+      <rect x="144" y="0" width="98" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="193" y="16" text-anchor="middle" class="mono chip-style">WebSockets</text>
 
-      <rect x="241" y="0" width="70" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="276" y="15" text-anchor="middle" class="mono stack-chip">Tailwind</text>
+      <rect x="250" y="0" width="74" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="287" y="16" text-anchor="middle" class="mono chip-style">Tailwind</text>
     </g>
   </g>
 
-  <!-- CARD 4: Brand Identity Systems (Bottom-Right) -->
-  <g transform="translate(515, 270)">
-    <rect width="455" height="195" rx="10" fill="url(#pCard4)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.7"/>
-    <!-- Header strip -->
-    <rect x="0" y="0" width="455" height="36" rx="10" fill="#1f0f29" fill-opacity="0.75"/>
+  <!-- CARD 4: 04 // Brand Identity Systems (Bottom-Right) -->
+  <g transform="translate(515, 290)">
+    <rect width="455" height="215" rx="10" fill="url(#cBg4)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.75"/>
+    <rect x="0" y="0" width="455" height="36" rx="10" fill="#1f0f29" fill-opacity="0.8"/>
     <line x1="0" y1="36" x2="455" y2="36" stroke="#1e293b" stroke-width="1"/>
-    <!-- Title & Badge -->
-    <circle cx="20" cy="18" r="4" fill="#e879f9"/>
-    <text x="34" y="22" class="sans proj-title">Brand Identity Systems</text>
-    <rect x="325" y="8" width="117" height="20" rx="4" fill="#1b0a24" stroke="#e879f9" stroke-width="0.8"/>
-    <text x="383.5" y="22" text-anchor="middle" class="mono proj-tag" fill="#e879f9">[DESIGN_SYSTEM]</text>
 
-    <!-- Role & Arch Subheader -->
-    <g transform="translate(20, 56)">
-      <text y="0" class="mono role-text" fill="#e879f9">Visual Designer &amp; Director</text>
-      <text x="215" y="0" class="mono role-sub">| Brand Architecture &amp; UI</text>
+    <!-- Title & Status -->
+    <circle cx="20" cy="18" r="4" fill="#e879f9"/>
+    <text x="34" y="22" class="sans card-title">04 // Brand Identity Systems</text>
+    <rect x="260" y="8" width="182" height="20" rx="4" fill="#1b0a24" stroke="#e879f9" stroke-width="0.8"/>
+    <text x="351" y="22" text-anchor="middle" class="mono tag-badge" fill="#e879f9">[DESIGN_SYSTEM] &#x2022; 50+ CLIENTS</text>
+
+    <!-- Role Metadata -->
+    <g transform="translate(18, 56)">
+      <text y="0" class="mono role-lead" fill="#e879f9">Visual Designer &amp; Director</text>
+      <text x="210" y="0" class="mono" font-size="10.5" fill="#94a3b8">| Brand Architecture &amp; UI</text>
     </g>
 
-    <!-- Deliverables Bullet Points -->
-    <g transform="translate(20, 78)">
-      <circle cx="3" cy="-4" r="2" fill="#e879f9"/>
-      <text x="14" y="0" class="sans deliv-text">Comprehensive brand identity manuals, typography &amp; optical balance</text>
+    <!-- Key Deliverables -->
+    <g transform="translate(18, 76)">
+      <circle cx="4" cy="-3" r="2" fill="#e879f9"/>
+      <text x="14" y="0" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Brand Architecture:</tspan> Comprehensive identity guidelines &amp; typography</text>
 
-      <circle cx="3" cy="16" r="2" fill="#e879f9"/>
-      <text x="14" y="20" class="sans deliv-text">Mathematical vector mark systems &amp; multi-format asset pipelines</text>
+      <circle cx="4" cy="18" r="2" fill="#e879f9"/>
+      <text x="14" y="21" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Vector Mark Systems:</tspan> Mathematical vector mark &amp; digital asset libraries</text>
 
-      <circle cx="3" cy="36" r="2" fill="#e879f9"/>
-      <text x="14" y="40" class="sans deliv-text">Figma design tokens directly translated to production React CSS</text>
+      <circle cx="4" cy="39" r="2" fill="#e879f9"/>
+      <text x="14" y="42" class="sans deliv-line"><tspan fill="#f1f5f9" font-weight="600">Tokenized UI Pipeline:</tspan> Figma tokens translated to zero-debt React styles</text>
     </g>
 
     <!-- Tech Stack Chips -->
-    <g transform="translate(20, 150)">
-      <rect x="0" y="0" width="56" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="28" y="15" text-anchor="middle" class="mono stack-chip">Figma</text>
+    <g transform="translate(18, 172)">
+      <rect x="0" y="0" width="58" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="29" y="16" text-anchor="middle" class="mono chip-style">Figma</text>
 
-      <rect x="64" y="0" width="82" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="105" y="15" text-anchor="middle" class="mono stack-chip">Illustrator</text>
+      <rect x="66" y="0" width="86" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="109" y="16" text-anchor="middle" class="mono chip-style">Illustrator</text>
 
-      <rect x="154" y="0" width="80" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="194" y="15" text-anchor="middle" class="mono stack-chip">Photoshop</text>
+      <rect x="160" y="0" width="84" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="202" y="16" text-anchor="middle" class="mono chip-style">Photoshop</text>
 
-      <rect x="242" y="0" width="102" height="22" rx="4" fill="url(#pChipBg)" stroke="#1e293b" stroke-width="1"/>
-      <text x="293" y="15" text-anchor="middle" class="mono stack-chip">Design Tokens</text>
+      <rect x="252" y="0" width="108" height="24" rx="5" fill="url(#chipGrad)" stroke="#1e293b" stroke-width="1"/>
+      <text x="306" y="16" text-anchor="middle" class="mono chip-style">Design Tokens</text>
     </g>
   </g>
 
   <!-- Bottom Telemetry Ribbon -->
-  <g transform="translate(30, 480)">
+  <g transform="translate(30, 520)">
     <rect x="0" y="0" width="940" height="28" rx="6" fill="#040c17" stroke="#1e293b" stroke-width="1"/>
     <circle cx="16" cy="14" r="3.5" fill="#10b981"/>
-    <text x="32" y="18" class="mono bottom-ribbon">ENTERPRISE-GRADE ARCHITECTURE // STRICT TOKEN DESIGN // ZERO TECHNICAL DEBT</text>
-    <text x="922" y="18" text-anchor="end" class="mono" font-size="9.5" fill="#64748b">[ 100% PRODUCTION READY ]</text>
+    <text x="32" y="18" class="mono" font-size="10" fill="#cbd5e1" letter-spacing="1.5px">ENTERPRISE ARCHITECTURE // ZERO TECHNICAL DEBT // 100% PRODUCTION READY</text>
+    <text x="922" y="18" text-anchor="end" class="mono" font-size="9.5" fill="#64748b">[ 4 ACTIVE SYSTEMS ]</text>
   </g>
 </svg>
