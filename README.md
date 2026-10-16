@@ -4,7 +4,7 @@
 
 <div align="center">
   <img 
-    src="./assets/header.svg" 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/header.svg" 
     width="100%" 
     alt="S Sindid Ahmed Nabil - Full-Stack Software Engineer"
   />
@@ -75,30 +75,34 @@ const SoftwareEngineer: FullStackEngineer = {
 
 <br/>
 
-<div align="center">
-  <table>
-    <tr>
-      <td width="55%" valign="top">
-        <h4 align="left">Engineering Background</h4>
-        <p align="left">
-          I am a <strong>Full-Stack Software Engineer</strong> focused on developing robust, fault-tolerant web applications. With an emphasis on modern JavaScript/TypeScript ecosystems, I build end-to-end architectures that unite efficient server-side logic with responsive, accessible user interfaces.
-        </p>
-        <p align="left">
-          My development approach prioritizes modular codebases, optimized database queries, secure authentication flows, and maintainable state management across distributed components.
-        </p>
-      </td>
-      <td width="45%" valign="top">
-        <h4 align="left">Active Research &amp; Focus Areas</h4>
-        <ul align="left">
-          <li><strong>Modern Full-Stack:</strong> Next.js App Router, Server Actions, SSR/SSG caching strategies</li>
-          <li><strong>Distributed Systems:</strong> Microservices boundaries, event-driven pipelines, message queues</li>
-          <li><strong>Real-Time Systems:</strong> WebSockets, state synchronization, Redis pub/sub</li>
-          <li><strong>Database Optimization:</strong> Indexing strategies, aggregation pipelines, schema normalization</li>
-        </ul>
-      </td>
-    </tr>
-  </table>
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td width="53%" valign="top">
+      <h4>Engineering Background</h4>
+      <p>
+        I am a <strong>Full-Stack Software Engineer</strong> focused on developing robust, fault-tolerant web applications. With an emphasis on modern JavaScript/TypeScript ecosystems, I build end-to-end architectures that unite efficient server-side logic with responsive, accessible user interfaces.
+      </p>
+      <p>
+        My development approach prioritizes modular codebases, optimized database queries, secure authentication flows, and maintainable state management across distributed components.
+      </p>
+      <p>
+        <code>MODULAR ARCHITECTURE</code> &bull; <code>DEFENSIVE DESIGN</code> &bull; <code>ZERO-DEBT UX</code>
+      </p>
+    </td>
+    <td width="47%" valign="top">
+      <h4>Active Research &amp; Focus Areas</h4>
+      <ul>
+        <li><strong>Modern Full-Stack:</strong> Next.js App Router, Server Actions, SSR/SSG caching strategies</li>
+        <li><strong>Distributed Systems:</strong> Microservices boundaries, event-driven pipelines, message queues</li>
+        <li><strong>Real-Time Systems:</strong> WebSockets, state synchronization, Redis pub/sub</li>
+        <li><strong>Database Optimization:</strong> Indexing strategies, aggregation pipelines, schema normalization</li>
+      </ul>
+      <p>
+        <code>SUB-100MS APIS</code> &bull; <code>EVENT-DRIVEN</code> &bull; <code>HIGH AVAILABILITY</code>
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -110,13 +114,13 @@ const SoftwareEngineer: FullStackEngineer = {
 
 A common friction point in product development is the communication barrier between engineering constraints and design intent. My background synthesizes 5+ years of graphic design and brand identity with rigorous full-stack development.
 
-<div align="center">
+<p align="center">
   <img 
-    src="./assets/convergence.svg" 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/convergence.svg" 
     width="100%" 
     alt="Engineering & Design Convergence Architecture"
   />
-</div>
+</p>
 
 - **Rapid Prototyping to Production:** Seamless transition from Figma concepts to semantic, accessible React/Next.js components.
 - **Consistent Design Systems:** Strict token-driven design rules that reduce UI debt and maintain brand cohesion across platforms.
@@ -167,16 +171,12 @@ A common friction point in product development is the communication barrier betw
 
 ## 04 // Architecture Highlights & Case Studies
 
-<div align="center">
-
 | Project / Domain | Architecture &amp; Role | Technology Stack | Key Engineering Deliverables |
 | :--- | :--- | :--- | :--- |
 | **Tourism Platform** | Full-Stack Architect | Next.js, Node.js, MongoDB, Tailwind | Dynamic booking engine, geo-indexed search, server-side rendered routes, automated confirmation pipelines |
 | **E-Commerce Engine** | Backend &amp; UI Developer | React, Node.js, Express, Stripe, Redux | JWT authentication, atomic checkout flow, webhook-driven order states, administrative analytics dashboard |
 | **Real-Time Workspace** | Full-Stack Developer | React, Express, WebSockets, Tailwind | Low-latency bi-directional messaging, live user presence tracking, role-based authorization |
 | **Brand Identity Systems** | Visual Designer &amp; Director | Figma, Illustrator, Photoshop | Comprehensive identity guidelines, vector mark design, scalable digital asset libraries for 50+ clients |
-
-</div>
 
 ---
 
@@ -223,8 +223,6 @@ A common friction point in product development is the communication barrier betw
 
 Open to conversations regarding full-stack software engineering positions, architectural consulting, and technical collaborations.
 
-<div align="center">
-
 <p align="center">
   <a href="https://www.linkedin.com/in/nabilpwqz">
     <img src="https://img.shields.io/badge/LinkedIn-nabilpwqz-0284c7?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -239,24 +237,41 @@ Open to conversations regarding full-stack software engineering positions, archi
   </a>
 </p>
 
-<br/>
+<table align="center" width="100%">
+  <thead>
+    <tr>
+      <th align="left">Channel</th>
+      <th align="left">Direct Endpoint</th>
+      <th align="left">Availability &amp; Scope</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>LinkedIn</strong></td>
+      <td><a href="https://www.linkedin.com/in/nabilpwqz">linkedin.com/in/nabilpwqz</a></td>
+      <td>Senior / Lead engineering roles, technical advisory, professional network</td>
+    </tr>
+    <tr>
+      <td><strong>GitHub</strong></td>
+      <td><a href="https://github.com/nabilpwqz">github.com/nabilpwqz</a></td>
+      <td>Open-source contributions, code reviews, distributed architectural systems</td>
+    </tr>
+    <tr>
+      <td><strong>Direct Email</strong></td>
+      <td><a href="mailto:nabilpwqz@gmail.com">nabilpwqz@gmail.com</a></td>
+      <td>Direct dispatch, technical consulting engagements, high-priority discussions</td>
+    </tr>
+  </tbody>
+</table>
 
-| Channel | Direct Access / Handle | Availability &amp; Purpose |
-| :--- | :--- | :--- |
-| **LinkedIn** | [linkedin.com/in/nabilpwqz](https://www.linkedin.com/in/nabilpwqz) | Engineering roles, leadership inquiries, professional network |
-| **GitHub** | [github.com/nabilpwqz](https://github.com/nabilpwqz) | Open-source contributions, code reviews, architectural repositories |
-| **Direct Email** | [nabilpwqz@gmail.com](mailto:nabilpwqz@gmail.com) | Direct dispatch, consulting engagements, high-priority discussions |
+<p align="center">
+  <code>"Clean architecture. Intentional design. Scalable execution."</code>
+</p>
 
-<br/>
-
-```
-"Clean architecture. Intentional design. Scalable execution."
-```
-
-<img 
-  src="./assets/footer.svg" 
-  width="100%" 
-  alt="S Sindid Ahmed Nabil - Footer Banner"
-/>
-
-</div>
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/footer.svg" 
+    width="100%" 
+    alt="S Sindid Ahmed Nabil - Footer Banner" 
+  />
+</p>
