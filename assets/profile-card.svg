@@ -1,144 +1,162 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 310" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="100%">
   <defs>
-    <!-- Card Background Gradient -->
-    <linearGradient id="profCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617"/>
-      <stop offset="50%" stop-color="#071521"/>
-      <stop offset="100%" stop-color="#041f1c"/>
+      <stop offset="35%" stop-color="#071524"/>
+      <stop offset="70%" stop-color="#052621"/>
+      <stop offset="100%" stop-color="#020617"/>
     </linearGradient>
 
-    <!-- Subtle Radial Glow -->
-    <radialGradient id="profGlow" cx="80%" cy="20%" r="60%">
-      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.25"/>
-      <stop offset="70%" stop-color="#0d9488" stop-opacity="0.03"/>
+    <!-- Center Radial Glow -->
+    <radialGradient id="cardRadialGlow" cx="50%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.28"/>
+      <stop offset="50%" stop-color="#14b8a6" stop-opacity="0.06"/>
       <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Border Gradient -->
-    <linearGradient id="profBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Outer Border Gradient -->
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="30%" stop-color="#0d9488"/>
-      <stop offset="70%" stop-color="#2dd4bf"/>
+      <stop offset="25%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="75%" stop-color="#0d9488"/>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
-    <!-- Inner Panel Gradient -->
-    <linearGradient id="innerPanel" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1624"/>
-      <stop offset="100%" stop-color="#06121a"/>
+    <!-- Pillar Card Gradients -->
+    <linearGradient id="pillarBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081b29"/>
+      <stop offset="100%" stop-color="#040f17"/>
     </linearGradient>
 
-    <!-- Tech Dot Grid -->
-    <pattern id="profGrid" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="0.75" fill="#14b8a6" fill-opacity="0.14"/>
+    <linearGradient id="pillarBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06221c"/>
+      <stop offset="100%" stop-color="#03120f"/>
+    </linearGradient>
+
+    <!-- Subtle Dot Matrix Grid -->
+    <pattern id="matrixGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#14b8a6" fill-opacity="0.16"/>
     </pattern>
   </defs>
 
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
     .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
-    .titlebar-text { font-size: 11px; fill: #64748b; letter-spacing: 1px; }
-    .label { font-size: 10px; fill: #14b8a6; letter-spacing: 2px; font-weight: 700; }
-    .val-main { font-size: 14px; fill: #f8fafc; font-weight: 700; letter-spacing: 0.5px; }
-    .val-sub { font-size: 12px; fill: #cbd5e1; font-weight: 500; }
-    .badge-text { font-size: 10px; fill: #2dd4bf; letter-spacing: 1.5px; font-weight: 700; }
-    .pillar-text { font-size: 11.5px; fill: #e2e8f0; font-weight: 500; }
+    .tag-title { font-size: 10px; fill: #14b8a6; letter-spacing: 2px; font-weight: 700; }
+    .name-text { font-size: 20px; fill: #f8fafc; font-weight: 800; letter-spacing: 0.5px; }
+    .title-sub { font-size: 13px; fill: #e2e8f0; font-weight: 600; }
+    .body-desc { font-size: 11.5px; fill: #94a3b8; font-weight: 500; }
+    .pillar-name { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
+    .pillar-desc { font-size: 10.5px; fill: #94a3b8; font-weight: 500; }
+    .ribbon-text { font-size: 10px; fill: #cbd5e1; letter-spacing: 1.5px; font-weight: 600; }
   </style>
 
   <!-- Container Box -->
-  <rect width="938" height="308" x="1" y="1" rx="12" fill="url(#profCardBg)"/>
-  <rect width="938" height="308" x="1" y="1" rx="12" fill="url(#profGlow)"/>
-  <rect width="938" height="308" x="1" y="1" rx="12" fill="url(#profGrid)"/>
-  <rect width="938" height="308" x="1" y="1" rx="12" fill="none" stroke="url(#profBorder)" stroke-width="1.4"/>
+  <rect width="998" height="358" x="1" y="1" rx="14" fill="url(#cardGrad)"/>
+  <rect width="998" height="358" x="1" y="1" rx="14" fill="url(#cardRadialGlow)"/>
+  <rect width="998" height="358" x="1" y="1" rx="14" fill="url(#matrixGrid)"/>
+  <rect width="998" height="358" x="1" y="1" rx="14" fill="none" stroke="url(#cardBorder)" stroke-width="1.5"/>
 
-  <!-- Top Titlebar -->
-  <rect x="1" y="1" width="938" height="36" rx="12" fill="#040a14" fill-opacity="0.85"/>
-  <line x1="1" y1="37" x2="939" y2="37" stroke="#1e293b" stroke-width="1"/>
+  <!-- Top Window Header Bar -->
+  <rect x="1" y="1" width="998" height="42" rx="14" fill="#040b15" fill-opacity="0.9"/>
+  <line x1="1" y1="43" x2="999" y2="43" stroke="#1e293b" stroke-width="1"/>
 
   <!-- Window Dots -->
-  <g transform="translate(24, 19)">
-    <circle cx="0" cy="0" r="4.5" fill="#ef4444" fill-opacity="0.8"/>
-    <circle cx="14" cy="0" r="4.5" fill="#f59e0b" fill-opacity="0.8"/>
-    <circle cx="28" cy="0" r="4.5" fill="#10b981" fill-opacity="0.8"/>
-    <text x="48" y="3.5" class="mono titlebar-text">manifesto.config.ts // EXECUTIVE PROFILE MATRIX</text>
+  <g transform="translate(26, 22)">
+    <circle cx="0" cy="0" r="5" fill="#ef4444" fill-opacity="0.85"/>
+    <circle cx="15" cy="0" r="5" fill="#f59e0b" fill-opacity="0.85"/>
+    <circle cx="30" cy="0" r="5" fill="#10b981" fill-opacity="0.85"/>
+    <text x="52" y="4" class="mono" font-size="11" fill="#64748b" letter-spacing="1px">philosophy.manifesto.ts // CORE ARCHITECTURAL ENGINE</text>
   </g>
 
-  <!-- Titlebar Telemetry -->
-  <g transform="translate(910, 19)" text-anchor="end">
-    <circle cx="-130" cy="0" r="3" fill="#10b981"/>
-    <text x="-115" y="3.5" class="mono" font-size="10" fill="#94a3b8" letter-spacing="1px">STATUS: OPEN FOR ROLES</text>
+  <!-- Top Right Live Status Indicator -->
+  <g transform="translate(970, 22)" text-anchor="end">
+    <circle cx="-168" cy="0" r="3.5" fill="#10b981"/>
+    <circle cx="-168" cy="0" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="-150" y="3.5" class="mono" font-size="10" fill="#2dd4bf" font-weight="700" letter-spacing="1.5px">AVAILABLE // HIGH-IMPACT ROLES</text>
   </g>
 
-  <!-- Main Content Grid -->
-  <!-- Left Column: Core Identity & Dual Discipline -->
-  <g transform="translate(30, 56)">
-    <!-- Identity Field -->
+  <!-- Corner Brackets -->
+  <g stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.5">
+    <path d="M 18 58 L 18 50 L 26 50"/>
+    <path d="M 982 58 L 982 50 L 974 50"/>
+    <path d="M 18 338 L 18 346 L 26 346"/>
+    <path d="M 982 338 L 982 346 L 974 346"/>
+  </g>
+
+  <!-- ================= LEFT COLUMN: IDENTITY & SPECIALIZATION ================= -->
+  <g transform="translate(40, 68)">
+    <!-- 01. Identity Block -->
     <g transform="translate(0, 0)">
-      <text y="10" class="mono label">01 // IDENTITY &amp; BASE</text>
-      <text y="30" class="sans val-main">S Sindid Ahmed Nabil</text>
-      <text y="48" class="mono" font-size="11" fill="#94a3b8">DHAKA, BANGLADESH [23.8103° N, 90.4125° E &#x2022; UTC+6]</text>
+      <text y="10" class="mono tag-title">// 01. IDENTITY &amp; LOCATION</text>
+      <text y="34" class="sans name-text">S Sindid Ahmed Nabil</text>
+      <text y="54" class="mono" font-size="11" fill="#94a3b8">DHAKA, BANGLADESH [23.8103° N, 90.4125° E &#x2022; UTC+6]</text>
     </g>
 
-    <!-- Discipline Field -->
-    <g transform="translate(0, 74)">
-      <text y="10" class="mono label">02 // PRIMARY DISCIPLINE</text>
-      <text y="30" class="sans val-main">Full-Stack Software Engineering</text>
-      <text y="48" class="sans val-sub">MERN Architecture &#x2022; Next.js 14+ Full-Stack &#x2022; Scalable Distributed APIs</text>
+    <!-- 02. Discipline Block -->
+    <g transform="translate(0, 84)">
+      <text y="10" class="mono tag-title">// 02. PRIMARY ENGINEERING DISCIPLINE</text>
+      <text y="32" class="sans title-sub" fill="#38bdf8">Full-Stack Software Engineering</text>
+      <text y="50" class="sans body-desc">Specialization in MERN Stack, Next.js Full-Stack &amp; Scalable REST/GraphQL APIs</text>
     </g>
 
-    <!-- Secondary Advantage -->
-    <g transform="translate(0, 148)">
-      <text y="10" class="mono label">03 // DUAL-THREAT ADVANTAGE</text>
-      <text y="30" class="sans val-main" fill="#38bdf8">5+ Years Visual Systems &amp; Brand Architecture</text>
-      <text y="48" class="sans val-sub">Design Tokens &#x2022; Vector Art &#x2022; Rapid Prototyping to Production UI</text>
-    </g>
-  </g>
-
-  <!-- Vertical Divider -->
-  <line x1="490" y1="56" x2="490" y2="250" stroke="#1e293b" stroke-width="1"/>
-  <line x1="490" y1="110" x2="490" y2="190" stroke="#0d9488" stroke-width="1.5"/>
-
-  <!-- Right Column: Architectural Pillars & Philosophy -->
-  <g transform="translate(520, 56)">
-    <text y="10" class="mono label">04 // ARCHITECTURAL PILLARS &amp; CORE VALUES</text>
-
-    <!-- Pillar 1 -->
-    <g transform="translate(0, 30)">
-      <rect x="0" y="-12" width="390" height="34" rx="6" fill="url(#innerPanel)" stroke="#1e293b" stroke-width="1"/>
-      <circle cx="16" cy="5" r="3" fill="#2dd4bf"/>
-      <text x="30" y="9" class="mono pillar-text"><tspan fill="#2dd4bf" font-weight="700">Clean Code:</tspan> Modular, DRY, strictly typed TypeScript</text>
-    </g>
-
-    <!-- Pillar 2 -->
-    <g transform="translate(0, 72)">
-      <rect x="0" y="-12" width="390" height="34" rx="6" fill="url(#innerPanel)" stroke="#1e293b" stroke-width="1"/>
-      <circle cx="16" cy="5" r="3" fill="#38bdf8"/>
-      <text x="30" y="9" class="mono pillar-text"><tspan fill="#38bdf8" font-weight="700">Defensive Architecture:</tspan> Zero-trust validation &amp; fault tolerance</text>
-    </g>
-
-    <!-- Pillar 3 -->
-    <g transform="translate(0, 114)">
-      <rect x="0" y="-12" width="390" height="34" rx="6" fill="url(#innerPanel)" stroke="#1e293b" stroke-width="1"/>
-      <circle cx="16" cy="5" r="3" fill="#10b981"/>
-      <text x="30" y="9" class="mono pillar-text"><tspan fill="#10b981" font-weight="700">Performance Optimization:</tspan> Sub-100ms API latency &amp; edge caching</text>
-    </g>
-
-    <!-- Pillar 4 -->
-    <g transform="translate(0, 156)">
-      <rect x="0" y="-12" width="390" height="34" rx="6" fill="url(#innerPanel)" stroke="#1e293b" stroke-width="1"/>
-      <circle cx="16" cy="5" r="3" fill="#f43f5e"/>
-      <text x="30" y="9" class="mono pillar-text"><tspan fill="#f43f5e" font-weight="700">High UX Fidelity:</tspan> 99+ Core Web Vitals &amp; token design consistency</text>
+    <!-- 03. Secondary Hybrid Edge -->
+    <g transform="translate(0, 164)">
+      <text y="10" class="mono tag-title">// 03. HYBRID PRODUCT ADVANTAGE</text>
+      <text y="32" class="sans title-sub" fill="#2dd4bf">5+ Years Visual Systems &amp; Brand Architecture</text>
+      <text y="50" class="sans body-desc">Figma Tokens to React, Vector Art Direction, Zero Design-to-Code Translation Debt</text>
     </g>
   </g>
 
-  <!-- Bottom Telemetry Banner -->
-  <g transform="translate(30, 266)">
-    <rect x="0" y="0" width="880" height="30" rx="6" fill="#040b15" stroke="#1e293b" stroke-width="1"/>
-    <!-- Pulse -->
-    <circle cx="18" cy="15" r="3.5" fill="#10b981"/>
-    <circle cx="18" cy="15" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
-    <text x="36" y="19" class="mono" font-size="10.5" fill="#94a3b8" letter-spacing="1.5px">STATUS:</text>
-    <text x="96" y="19" class="mono" font-size="10.5" fill="#2dd4bf" font-weight="700" letter-spacing="1px">AVAILABLE FOR FULL-STACK ROLES &amp; HIGH-IMPACT COLLABORATIONS</text>
-    <text x="860" y="19" text-anchor="end" class="mono" font-size="10" fill="#64748b">[ ACTIVE ]</text>
+  <!-- Vertical Divider with Center Laser -->
+  <line x1="510" y1="62" x2="510" y2="295" stroke="#1e293b" stroke-width="1"/>
+  <line x1="510" y1="130" x2="510" y2="225" stroke="#0d9488" stroke-width="1.8"/>
+  <circle cx="510" cy="177" r="2.5" fill="#2dd4bf"/>
+
+  <!-- ================= RIGHT COLUMN: CORE VALUES & PILLARS ================= -->
+  <g transform="translate(540, 68)">
+    <text y="10" class="mono tag-title">// 04. ARCHITECTURAL VALUES &amp; CORE PRINCIPLES</text>
+
+    <!-- Pillar 1: Clean Code -->
+    <g transform="translate(0, 24)">
+      <rect x="0" y="0" width="420" height="46" rx="7" fill="url(#pillarBg1)" stroke="#1e293b" stroke-width="1.2"/>
+      <circle cx="20" cy="23" r="3.5" fill="#2dd4bf"/>
+      <text x="36" y="20" class="mono pillar-name" fill="#2dd4bf">Clean Code &amp; Strict Typing</text>
+      <text x="36" y="36" class="sans pillar-desc">Modular, self-documenting codebases with rigid TypeScript boundaries</text>
+    </g>
+
+    <!-- Pillar 2: Defensive Architecture -->
+    <g transform="translate(0, 78)">
+      <rect x="0" y="0" width="420" height="46" rx="7" fill="url(#pillarBg2)" stroke="#1e293b" stroke-width="1.2"/>
+      <circle cx="20" cy="23" r="3.5" fill="#38bdf8"/>
+      <text x="36" y="20" class="mono pillar-name" fill="#38bdf8">Defensive Architecture</text>
+      <text x="36" y="36" class="sans pillar-desc">Fault-tolerant API contracts, zero-trust validation &amp; idempotent states</text>
+    </g>
+
+    <!-- Pillar 3: Performance Optimization -->
+    <g transform="translate(0, 132)">
+      <rect x="0" y="0" width="420" height="46" rx="7" fill="url(#pillarBg1)" stroke="#1e293b" stroke-width="1.2"/>
+      <circle cx="20" cy="23" r="3.5" fill="#10b981"/>
+      <text x="36" y="20" class="mono pillar-name" fill="#10b981">Performance Optimization</text>
+      <text x="36" y="36" class="sans pillar-desc">Sub-100ms API response latency, Redis caching &amp; database indexing</text>
+    </g>
+
+    <!-- Pillar 4: High UX Fidelity -->
+    <g transform="translate(0, 186)">
+      <rect x="0" y="0" width="420" height="46" rx="7" fill="url(#pillarBg2)" stroke="#1e293b" stroke-width="1.2"/>
+      <circle cx="20" cy="23" r="3.5" fill="#f43f5e"/>
+      <text x="36" y="20" class="mono pillar-name" fill="#f43f5e">High UX Fidelity</text>
+      <text x="36" y="36" class="sans pillar-desc">99+ Core Web Vitals, accessible micro-interactions &amp; fluid responsiveness</text>
+    </g>
+  </g>
+
+  <!-- Bottom Telemetry Strip -->
+  <g transform="translate(40, 312)">
+    <rect x="0" y="0" width="920" height="32" rx="7" fill="#040c17" stroke="#1e293b" stroke-width="1"/>
+    <circle cx="20" cy="16" r="3.5" fill="#10b981"/>
+    <text x="36" y="20" class="mono ribbon-text"><tspan fill="#10b981" font-weight="700">STATUS:</tspan> AVAILABLE FOR SOFTWARE ENGINEERING ROLES &amp; HIGH-IMPACT COLLABORATIONS</text>
+    <text x="900" y="20" text-anchor="end" class="mono" font-size="10" fill="#64748b">[ ACTIVE ]</text>
   </g>
 </svg>

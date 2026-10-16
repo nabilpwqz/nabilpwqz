@@ -59,34 +59,39 @@
   />
 </p>
 
-
 <table align="center" width="100%">
-  <tr>
-    <td width="53%" valign="top">
-      <h4>Engineering Background</h4>
-      <p>
-        I am a <strong>Full-Stack Software Engineer</strong> focused on developing robust, fault-tolerant web applications. With an emphasis on modern JavaScript/TypeScript ecosystems, I build end-to-end architectures that unite efficient server-side logic with responsive, accessible user interfaces.
-      </p>
-      <p>
-        My development approach prioritizes modular codebases, optimized database queries, secure authentication flows, and maintainable state management across distributed components.
-      </p>
-      <p>
-        <code>MODULAR ARCHITECTURE</code> &bull; <code>DEFENSIVE DESIGN</code> &bull; <code>ZERO-DEBT UX</code>
-      </p>
-    </td>
-    <td width="47%" valign="top">
-      <h4>Active Research &amp; Focus Areas</h4>
-      <ul>
-        <li><strong>Modern Full-Stack:</strong> Next.js App Router, Server Actions, SSR/SSG caching strategies</li>
-        <li><strong>Distributed Systems:</strong> Microservices boundaries, event-driven pipelines, message queues</li>
-        <li><strong>Real-Time Systems:</strong> WebSockets, state synchronization, Redis pub/sub</li>
-        <li><strong>Database Optimization:</strong> Indexing strategies, aggregation pipelines, schema normalization</li>
-      </ul>
-      <p>
-        <code>SUB-100MS APIS</code> &bull; <code>EVENT-DRIVEN</code> &bull; <code>HIGH AVAILABILITY</code>
-      </p>
-    </td>
-  </tr>
+  <thead>
+    <tr>
+      <th width="52%" align="left">SYSTEMS ARCHITECTURE &amp; BACKGROUND</th>
+      <th width="48%" align="left">ACTIVE RESEARCH &amp; FOCUS HORIZONS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td valign="top">
+        <p>
+          I am a <strong>Full-Stack Software Engineer</strong> focused on developing robust, fault-tolerant web applications. With an emphasis on modern JavaScript/TypeScript ecosystems, I build end-to-end architectures that unite efficient server-side logic with responsive, accessible user interfaces.
+        </p>
+        <p>
+          My development approach prioritizes modular codebases, optimized database queries, secure authentication flows, and maintainable state management across distributed components.
+        </p>
+        <p>
+          <code>MODULAR ARCHITECTURE</code> &bull; <code>DEFENSIVE DESIGN</code> &bull; <code>ZERO-DEBT UX</code>
+        </p>
+      </td>
+      <td valign="top">
+        <ul>
+          <li><strong>Modern Full-Stack:</strong> Next.js App Router, Server Actions, SSR/SSG caching strategies</li>
+          <li><strong>Distributed Systems:</strong> Microservices boundaries, event-driven pipelines, message queues</li>
+          <li><strong>Real-Time Systems:</strong> WebSockets, state synchronization, Redis pub/sub</li>
+          <li><strong>Database Optimization:</strong> Indexing strategies, aggregation pipelines, schema normalization</li>
+        </ul>
+        <p>
+          <code>SUB-100MS APIS</code> &bull; <code>EVENT-DRIVEN</code> &bull; <code>HIGH AVAILABILITY</code>
+        </p>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 ---
@@ -156,12 +161,86 @@ A common friction point in product development is the communication barrier betw
 
 ## 04 // Architecture Highlights & Case Studies
 
-| Project / Domain | Architecture &amp; Role | Technology Stack | Key Engineering Deliverables |
-| :--- | :--- | :--- | :--- |
-| **Tourism Platform** | Full-Stack Architect | Next.js, Node.js, MongoDB, Tailwind | Dynamic booking engine, geo-indexed search, server-side rendered routes, automated confirmation pipelines |
-| **E-Commerce Engine** | Backend &amp; UI Developer | React, Node.js, Express, Stripe, Redux | JWT authentication, atomic checkout flow, webhook-driven order states, administrative analytics dashboard |
-| **Real-Time Workspace** | Full-Stack Developer | React, Express, WebSockets, Tailwind | Low-latency bi-directional messaging, live user presence tracking, role-based authorization |
-| **Brand Identity Systems** | Visual Designer &amp; Director | Figma, Illustrator, Photoshop | Comprehensive identity guidelines, vector mark design, scalable digital asset libraries for 50+ clients |
+<table align="center" width="100%">
+  <thead>
+    <tr>
+      <th align="left" width="22%">Project &amp; Domain</th>
+      <th align="left" width="20%">Architecture &amp; Role</th>
+      <th align="left" width="23%">Technology Stack</th>
+      <th align="left" width="35%">Key Engineering Deliverables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <strong>Tourism Platform</strong><br/>
+        <code>[PRODUCTION_APP]</code>
+      </td>
+      <td>
+        <strong>Full-Stack Architect</strong><br/>
+        <small>System Design &amp; Core APIs</small>
+      </td>
+      <td>
+        <code>Next.js 14</code> <code>Node.js</code><br/>
+        <code>MongoDB</code> <code>Tailwind</code>
+      </td>
+      <td>
+        Dynamic booking engine, geospatial indexing (2dsphere), server-side rendered routes, automated transactional notification pipelines
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>E-Commerce Engine</strong><br/>
+        <code>[COMMERCE_CORE]</code>
+      </td>
+      <td>
+        <strong>Backend &amp; UI Developer</strong><br/>
+        <small>Payments &amp; State Engine</small>
+      </td>
+      <td>
+        <code>React</code> <code>Node.js</code><br/>
+        <code>Express</code> <code>Stripe</code> <code>Redux</code>
+      </td>
+      <td>
+        JWT authentication lifecycle, atomic checkout flow, webhook-driven order state machine, administrative real-time analytics dashboard
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Real-Time Workspace</strong><br/>
+        <code>[COLLABORATIVE]</code>
+      </td>
+      <td>
+        <strong>Full-Stack Developer</strong><br/>
+        <small>Sockets &amp; Concurrent State</small>
+      </td>
+      <td>
+        <code>React</code> <code>Express</code><br/>
+        <code>WebSockets</code> <code>Tailwind</code>
+      </td>
+      <td>
+        Low-latency bi-directional messaging, distributed live presence tracking, role-based authorization (RBAC) across concurrent rooms
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <strong>Brand Identity Systems</strong><br/>
+        <code>[DESIGN_SYSTEM]</code>
+      </td>
+      <td>
+        <strong>Visual Designer &amp; Director</strong><br/>
+        <small>Brand Architecture &amp; UI</small>
+      </td>
+      <td>
+        <code>Figma</code> <code>Illustrator</code><br/>
+        <code>Photoshop</code> <code>Design Tokens</code>
+      </td>
+      <td>
+        Comprehensive brand guidelines, scalable vector systems, design token specifications, digital design libraries deployed for 50+ clients
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -172,15 +251,15 @@ A common friction point in product development is the communication barrier betw
 ## 05 // Live GitHub Analytics
 
 <div align="center">
-  <table border="0">
+  <table border="0" cellpadding="0" cellspacing="0">
     <tr>
-      <td align="center" width="50%">
+      <td align="center" valign="middle">
         <img 
           src="https://github-readme-stats.vercel.app/api?username=nabilpwqz&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981&text_color=94a3b8" 
           alt="GitHub Activity Metrics" 
         />
       </td>
-      <td align="center" width="50%">
+      <td align="center" valign="middle">
         <img 
           src="https://github-readme-streak-stats.herokuapp.com/?user=nabilpwqz&theme=tokyonight&hide_border=true&background=0d1117&ring=10b981&fire=10b981&currStreakLabel=10b981" 
           alt="Contribution Streak Metrics" 
@@ -188,10 +267,11 @@ A common friction point in product development is the communication barrier betw
       </td>
     </tr>
     <tr>
-      <td colspan="2" align="center">
+      <td colspan="2" align="center" valign="middle">
+        <br/>
         <img 
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=nabilpwqz&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=10b981&text_color=94a3b8" 
-          alt="Most Used Languages" 
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=nabilpwqz&layout=donut&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981&text_color=94a3b8" 
+          alt="Most Used Languages (Donut Distribution)" 
         />
       </td>
     </tr>
@@ -207,20 +287,6 @@ A common friction point in product development is the communication barrier betw
 ## 06 // Connect & Professional Inquiries
 
 Open to conversations regarding full-stack software engineering positions, architectural consulting, and technical collaborations.
-
-<p align="center">
-  <a href="https://www.linkedin.com/in/nabilpwqz">
-    <img src="https://img.shields.io/badge/LinkedIn-nabilpwqz-0284c7?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/nabilpwqz">
-    <img src="https://img.shields.io/badge/GitHub-nabilpwqz-0d9488?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-  &nbsp;
-  <a href="mailto:nabilpwqz@gmail.com">
-    <img src="https://img.shields.io/badge/Email-nabilpwqz%40gmail.com-e11d48?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-</p>
 
 <table align="center" width="100%">
   <thead>
