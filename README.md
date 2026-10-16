@@ -59,40 +59,13 @@
   />
 </p>
 
-<table align="center" width="100%">
-  <thead>
-    <tr>
-      <th width="52%" align="left">SYSTEMS ARCHITECTURE &amp; BACKGROUND</th>
-      <th width="48%" align="left">ACTIVE RESEARCH &amp; FOCUS HORIZONS</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td valign="top">
-        <p>
-          I am a <strong>Full-Stack Software Engineer</strong> focused on developing robust, fault-tolerant web applications. With an emphasis on modern JavaScript/TypeScript ecosystems, I build end-to-end architectures that unite efficient server-side logic with responsive, accessible user interfaces.
-        </p>
-        <p>
-          My development approach prioritizes modular codebases, optimized database queries, secure authentication flows, and maintainable state management across distributed components.
-        </p>
-        <p>
-          <code>MODULAR ARCHITECTURE</code> &bull; <code>DEFENSIVE DESIGN</code> &bull; <code>ZERO-DEBT UX</code>
-        </p>
-      </td>
-      <td valign="top">
-        <ul>
-          <li><strong>Modern Full-Stack:</strong> Next.js App Router, Server Actions, SSR/SSG caching strategies</li>
-          <li><strong>Distributed Systems:</strong> Microservices boundaries, event-driven pipelines, message queues</li>
-          <li><strong>Real-Time Systems:</strong> WebSockets, state synchronization, Redis pub/sub</li>
-          <li><strong>Database Optimization:</strong> Indexing strategies, aggregation pipelines, schema normalization</li>
-        </ul>
-        <p>
-          <code>SUB-100MS APIS</code> &bull; <code>EVENT-DRIVEN</code> &bull; <code>HIGH AVAILABILITY</code>
-        </p>
-      </td>
-    </tr>
-  </tbody>
-</table>
+<p align="center">
+  <img 
+    src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/systems-architecture.svg" 
+    width="100%" 
+    alt="Systems Architecture &amp; Active Research Horizons"
+  />
+</p>
 
 ---
 
@@ -108,7 +81,7 @@ A common friction point in product development is the communication barrier betw
   <img 
     src="https://raw.githubusercontent.com/nabilpwqz/nabilpwqz/main/assets/convergence.svg" 
     width="100%" 
-    alt="Engineering & Design Convergence Architecture"
+    alt="Engineering &amp; Design Convergence Architecture"
   />
 </p>
 
@@ -245,10 +218,10 @@ A common friction point in product development is the communication barrier betw
 ---
 
 <!-- ============================================================== -->
-<!--                  05 // GITHUB ANALYTICS                        -->
+<!--             05 // PRODUCTION BENCHMARKS & GITHUB METRICS       -->
 <!-- ============================================================== -->
 
-## 05 // Live GitHub Analytics
+## 05 // Production Benchmarks & GitHub Metrics
 
 <div align="center">
   <table border="0" cellpadding="0" cellspacing="0">
@@ -266,22 +239,52 @@ A common friction point in product development is the communication barrier betw
         />
       </td>
     </tr>
-    <tr>
-      <td colspan="2" align="center" valign="middle">
-        <br/>
-        <img 
-          src="https://github-readme-stats.vercel.app/api/top-langs/?username=nabilpwqz&layout=donut&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=10b981&icon_color=10b981&text_color=94a3b8" 
-          alt="Most Used Languages (Donut Distribution)" 
-        />
-      </td>
-    </tr>
   </table>
 </div>
+
+<br/>
+
+<table align="center" width="100%">
+  <thead>
+    <tr>
+      <th align="left" width="28%">Engineering Metric</th>
+      <th align="left" width="22%">Production SLA</th>
+      <th align="left" width="50%">Architecture &amp; Implementation Standard</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>API Latency &amp; Throughput</strong></td>
+      <td><code>P95 &lt; 100ms</code></td>
+      <td>Multi-tier Redis caching, indexed MongoDB pipelines &amp; connection pooling</td>
+    </tr>
+    <tr>
+      <td><strong>Architecture Type Safety</strong></td>
+      <td><code>100% Strict Typing</code></td>
+      <td>End-to-end TypeScript contracts, Zod runtime validation &amp; defensive boundaries</td>
+    </tr>
+    <tr>
+      <td><strong>Core Web Vitals</strong></td>
+      <td><code>98 - 100 Score</code></td>
+      <td>Next.js SSR/SSG caching, zero layout shifts, asset compression &amp; lazy hydration</td>
+    </tr>
+    <tr>
+      <td><strong>Real-Time Synchronization</strong></td>
+      <td><code>Sub-50ms Latency</code></td>
+      <td>Bi-directional WebSockets, Redis Pub/Sub brokers &amp; distributed event queues</td>
+    </tr>
+    <tr>
+      <td><strong>Security &amp; Auth Standard</strong></td>
+      <td><code>Zero-Trust Model</code></td>
+      <td>Cryptographic JWT rotation, atomic checkout states &amp; role-based access control (RBAC)</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
 <!-- ============================================================== -->
-<!--                   06 // CONTACT & ENGAGEMENT                   -->
+<!--                   06 // CONNECT & ENGAGEMENT                   -->
 <!-- ============================================================== -->
 
 ## 06 // Connect & Professional Inquiries

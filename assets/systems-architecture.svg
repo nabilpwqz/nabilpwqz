@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="sysBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="45%" stop-color="#061623"/>
+      <stop offset="85%" stop-color="#04231e"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Radial Accent Glow -->
+    <radialGradient id="sysGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#14b8a6" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Outer Border Gradient -->
+    <linearGradient id="sysBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="25%" stop-color="#0d9488"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="75%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <!-- Card Item Background -->
+    <linearGradient id="itemBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081827"/>
+      <stop offset="100%" stop-color="#031016"/>
+    </linearGradient>
+
+    <!-- Dot Grid Pattern -->
+    <pattern id="sysGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.75" fill="#14b8a6" fill-opacity="0.14"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .header-tag { font-size: 11px; fill: #2dd4bf; letter-spacing: 2px; font-weight: 700; }
+    .body-p { font-size: 12.5px; fill: #cbd5e1; font-weight: 400; line-height: 1.6; }
+    .item-label { font-size: 11px; font-weight: 700; letter-spacing: 0.5px; }
+    .item-desc { font-size: 10.5px; fill: #94a3b8; font-weight: 500; }
+    .chip-text { font-size: 9.5px; fill: #e2e8f0; letter-spacing: 1.5px; font-weight: 700; }
+  </style>
+
+  <!-- Container Box -->
+  <rect width="998" height="338" x="1" y="1" rx="14" fill="url(#sysBg)"/>
+  <rect width="998" height="338" x="1" y="1" rx="14" fill="url(#sysGlow)"/>
+  <rect width="998" height="338" x="1" y="1" rx="14" fill="url(#sysGrid)"/>
+  <rect width="998" height="338" x="1" y="1" rx="14" fill="none" stroke="url(#sysBorder)" stroke-width="1.5"/>
+
+  <!-- Top Titlebar Strip -->
+  <rect x="1" y="1" width="998" height="38" rx="14" fill="#040b15" fill-opacity="0.88"/>
+  <line x1="1" y1="39" x2="999" y2="39" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Titlebar Content -->
+  <g transform="translate(24, 20)">
+    <circle cx="0" cy="0" r="4.5" fill="#ef4444" fill-opacity="0.85"/>
+    <circle cx="14" cy="0" r="4.5" fill="#f59e0b" fill-opacity="0.85"/>
+    <circle cx="28" cy="0" r="4.5" fill="#10b981" fill-opacity="0.85"/>
+    <text x="48" y="3.5" class="mono" font-size="11" fill="#64748b" letter-spacing="1px">core_engine.spec.ts // SYSTEMS ARCHITECTURE &amp; RESEARCH HORIZONS</text>
+  </g>
+  <g transform="translate(970, 20)" text-anchor="end">
+    <text x="0" y="3.5" class="mono" font-size="10" fill="#2dd4bf" letter-spacing="1.5px">[ DEFENSIVE_ENGINEERING ]</text>
+  </g>
+
+  <!-- ================= LEFT PANEL: SYSTEMS ARCHITECTURE ================= -->
+  <g transform="translate(36, 58)">
+    <text y="12" class="mono header-tag">// 01. SYSTEMS ARCHITECTURE &amp; PRINCIPLES</text>
+
+    <!-- Narrative Paragraphs -->
+    <g transform="translate(0, 32)">
+      <rect x="0" y="0" width="440" height="186" rx="8" fill="url(#itemBg)" stroke="#1e293b" stroke-width="1"/>
+      <g transform="translate(18, 22)">
+        <text y="0" class="sans body-p">I am a <tspan fill="#f8fafc" font-weight="700">Full-Stack Software Engineer</tspan> focused on developing</text>
+        <text y="20" class="sans body-p">robust, fault-tolerant web applications. With an emphasis on</text>
+        <text y="40" class="sans body-p">modern JavaScript/TypeScript ecosystems, I build end-to-end</text>
+        <text y="60" class="sans body-p">architectures uniting efficient server-side logic with responsive,</text>
+        <text y="80" class="sans body-p">accessible, high-fidelity user interfaces.</text>
+
+        <text y="112" class="sans body-p">My development approach prioritizes <tspan fill="#38bdf8" font-weight="600">modular codebases</tspan>,</text>
+        <text y="132" class="sans body-p"><tspan fill="#2dd4bf" font-weight="600">optimized database queries</tspan>, secure authentication flows,</text>
+        <text y="152" class="sans body-p">and maintainable state across distributed components.</text>
+      </g>
+    </g>
+
+    <!-- Left Chips -->
+    <g transform="translate(0, 230)">
+      <rect x="0" y="0" width="138" height="26" rx="5" fill="#040e19" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="12" cy="13" r="2.5" fill="#2dd4bf"/>
+      <text x="22" y="16.5" class="mono chip-text">MODULAR ARCH</text>
+
+      <rect x="146" y="0" width="142" height="26" rx="5" fill="#040e19" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="158" cy="13" r="2.5" fill="#38bdf8"/>
+      <text x="168" y="16.5" class="mono chip-text">DEFENSIVE DESIGN</text>
+
+      <rect x="296" y="0" width="144" height="26" rx="5" fill="#040e19" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="308" cy="13" r="2.5" fill="#10b981"/>
+      <text x="318" y="16.5" class="mono chip-text">ZERO-DEBT UX</text>
+    </g>
+  </g>
+
+  <!-- Center Laser Divider -->
+  <line x1="500" y1="56" x2="500" y2="310" stroke="#1e293b" stroke-width="1"/>
+  <line x1="500" y1="120" x2="500" y2="240" stroke="#0d9488" stroke-width="1.8"/>
+  <circle cx="500" cy="180" r="3" fill="#2dd4bf"/>
+
+  <!-- ================= RIGHT PANEL: ACTIVE RESEARCH ================= -->
+  <g transform="translate(524, 58)">
+    <text y="12" class="mono header-tag">// 02. ACTIVE RESEARCH &amp; FOCUS HORIZONS</text>
+
+    <!-- 4 Research Horizon Cards -->
+    <!-- Item 1: Modern Full-Stack -->
+    <g transform="translate(0, 32)">
+      <rect x="0" y="0" width="440" height="42" rx="6" fill="url(#itemBg)" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="18" cy="21" r="3" fill="#2dd4bf"/>
+      <text x="32" y="17" class="mono item-label" fill="#2dd4bf">Modern Full-Stack</text>
+      <text x="32" y="32" class="sans item-desc">Next.js App Router, Server Actions, multi-tier SSR/SSG caching</text>
+    </g>
+
+    <!-- Item 2: Distributed Systems -->
+    <g transform="translate(0, 80)">
+      <rect x="0" y="0" width="440" height="42" rx="6" fill="url(#itemBg)" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="18" cy="21" r="3" fill="#38bdf8"/>
+      <text x="32" y="17" class="mono item-label" fill="#38bdf8">Distributed Systems</text>
+      <text x="32" y="32" class="sans item-desc">Microservices boundaries, event-driven pipelines, message queues</text>
+    </g>
+
+    <!-- Item 3: Real-Time Systems -->
+    <g transform="translate(0, 128)">
+      <rect x="0" y="0" width="440" height="42" rx="6" fill="url(#itemBg)" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="18" cy="21" r="3" fill="#10b981"/>
+      <text x="32" y="17" class="mono item-label" fill="#10b981">Real-Time Systems</text>
+      <text x="32" y="32" class="sans item-desc">WebSockets, state synchronization, Redis Pub/Sub brokers</text>
+    </g>
+
+    <!-- Item 4: Database Optimization -->
+    <g transform="translate(0, 176)">
+      <rect x="0" y="0" width="440" height="42" rx="6" fill="url(#itemBg)" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="18" cy="21" r="3" fill="#a855f7"/>
+      <text x="32" y="17" class="mono item-label" fill="#a855f7">Database Optimization</text>
+      <text x="32" y="32" class="sans item-desc">Compound indexing strategies, aggregation pipelines &amp; normalization</text>
+    </g>
+
+    <!-- Right Chips -->
+    <g transform="translate(0, 230)">
+      <rect x="0" y="0" width="138" height="26" rx="5" fill="#040e19" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="12" cy="13" r="2.5" fill="#2dd4bf"/>
+      <text x="22" y="16.5" class="mono chip-text">SUB-100MS APIS</text>
+
+      <rect x="146" y="0" width="142" height="26" rx="5" fill="#040e19" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="158" cy="13" r="2.5" fill="#38bdf8"/>
+      <text x="168" y="16.5" class="mono chip-text">EVENT-DRIVEN</text>
+
+      <rect x="296" y="0" width="144" height="26" rx="5" fill="#040e19" stroke="#1e293b" stroke-width="1"/>
+      <circle cx="308" cy="13" r="2.5" fill="#10b981"/>
+      <text x="318" y="16.5" class="mono chip-text">HIGH AVAILABILITY</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <line x1="40" y1="316" x2="960" y2="316" stroke="#1e293b" stroke-width="0.8"/>
+  <line x1="440" y1="316" x2="560" y2="316" stroke="#2dd4bf" stroke-width="1.6"/>
+</svg>
