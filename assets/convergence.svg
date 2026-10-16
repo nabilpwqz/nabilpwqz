@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="100%">
+  <defs>
+    <!-- Card Gradients -->
+    <linearGradient id="cardBg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#07151e"/>
+      <stop offset="100%" stop-color="#040911"/>
+    </linearGradient>
+
+    <linearGradient id="cardBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05201b"/>
+      <stop offset="100%" stop-color="#040911"/>
+    </linearGradient>
+
+    <linearGradient id="centerBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0b1b2b"/>
+      <stop offset="50%" stop-color="#082924"/>
+      <stop offset="100%" stop-color="#0b1b2b"/>
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="engBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0f2b48"/>
+    </linearGradient>
+
+    <linearGradient id="desBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d3b33"/>
+    </linearGradient>
+
+    <linearGradient id="prodBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+
+    <!-- Subtle Dot Grid -->
+    <pattern id="convGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="0.8" fill="#14b8a6" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .card-title { font-size: 13px; font-weight: 700; letter-spacing: 2px; }
+    .card-item { font-size: 12px; fill: #cbd5e1; }
+    .card-dot { fill: #2dd4bf; }
+    .accent-tag { font-size: 10px; font-weight: 600; letter-spacing: 1.5px; }
+  </style>
+
+  <!-- Background base -->
+  <rect width="938" height="378" x="1" y="1" rx="12" fill="#030712" stroke="#1e293b" stroke-width="1"/>
+  <rect width="938" height="378" x="1" y="1" rx="12" fill="url(#convGrid)"/>
+
+  <!-- Left Card: Systems Engineering -->
+  <g transform="translate(40, 35)">
+    <rect width="380" height="185" rx="8" fill="url(#cardBg1)" stroke="url(#engBorder)" stroke-width="1.2"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="380" height="36" rx="8" fill="#0f1f33" fill-opacity="0.6"/>
+    <circle cx="22" cy="18" r="4" fill="#38bdf8"/>
+    <text x="36" y="22" class="mono card-title" fill="#38bdf8">SYSTEMS ENGINEERING</text>
+    <text x="360" y="22" text-anchor="end" class="mono accent-tag" fill="#64748b">BACKEND &amp; ARCH</text>
+    <line x1="0" y1="36" x2="380" y2="36" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <g transform="translate(24, 62)">
+      <circle cx="0" cy="-4" r="2.5" fill="#38bdf8"/>
+      <text x="14" y="0" class="sans card-item">Distributed API &amp; Microservices Architecture</text>
+
+      <circle cx="0" cy="24" r="2.5" fill="#38bdf8"/>
+      <text x="14" y="28" class="sans card-item">Schema Optimization &amp; Aggregation Indexing</text>
+
+      <circle cx="0" cy="52" r="2.5" fill="#38bdf8"/>
+      <text x="14" y="56" class="sans card-item">State Synchronization, Redis Caching &amp; Queues</text>
+
+      <circle cx="0" cy="80" r="2.5" fill="#38bdf8"/>
+      <text x="14" y="84" class="sans card-item">CI/CD, Cloud Deployment &amp; Defensive Logic</text>
+    </g>
+  </g>
+
+  <!-- Right Card: Visual Design Systems -->
+  <g transform="translate(520, 35)">
+    <rect width="380" height="185" rx="8" fill="url(#cardBg2)" stroke="url(#desBorder)" stroke-width="1.2"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="380" height="36" rx="8" fill="#0a2a22" fill-opacity="0.6"/>
+    <circle cx="22" cy="18" r="4" fill="#2dd4bf"/>
+    <text x="36" y="22" class="mono card-title" fill="#2dd4bf">VISUAL DESIGN SYSTEMS</text>
+    <text x="360" y="22" text-anchor="end" class="mono accent-tag" fill="#64748b">UI / UX / BRAND</text>
+    <line x1="0" y1="36" x2="380" y2="36" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Bullets -->
+    <g transform="translate(24, 62)">
+      <circle cx="0" cy="-4" r="2.5" fill="#2dd4bf"/>
+      <text x="14" y="0" class="sans card-item">Typography, Optical Balance &amp; Strict Grid Rules</text>
+
+      <circle cx="0" cy="24" r="2.5" fill="#2dd4bf"/>
+      <text x="14" y="28" class="sans card-item">Brand Identity, Vector Art &amp; Design Guidelines</text>
+
+      <circle cx="0" cy="52" r="2.5" fill="#2dd4bf"/>
+      <text x="14" y="56" class="sans card-item">Figma Design Tokens to Semantic Tailwind</text>
+
+      <circle cx="0" cy="80" r="2.5" fill="#2dd4bf"/>
+      <text x="14" y="84" class="sans card-item">High-Fidelity Micro-interactions &amp; Accessibility</text>
+    </g>
+  </g>
+
+  <!-- Middle Bi-Directional Bridge -->
+  <g transform="translate(420, 120)">
+    <line x1="0" y1="8" x2="100" y2="8" stroke="#14b8a6" stroke-width="1.5" stroke-dasharray="4 3"/>
+    <!-- Arrows -->
+    <polygon points="4,8 10,4 10,12" fill="#38bdf8"/>
+    <polygon points="96,8 90,4 90,12" fill="#2dd4bf"/>
+    <!-- Center synergy badge -->
+    <rect x="18" y="-7" width="64" height="28" rx="6" fill="#040d16" stroke="#1e293b" stroke-width="1"/>
+    <text x="50" y="11" text-anchor="middle" class="mono" font-size="9" fill="#2dd4bf" font-weight="700">SYNTHESIS</text>
+  </g>
+
+  <!-- Connectors to Production Box -->
+  <!-- Left down line -->
+  <path d="M 230 220 L 230 255 L 460 255 L 460 270" fill="none" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.6"/>
+  <!-- Right down line -->
+  <path d="M 710 220 L 710 255 L 480 255 L 480 270" fill="none" stroke="#2dd4bf" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <!-- Arrow down -->
+  <polygon points="470,274 464,265 476,265" fill="#10b981"/>
+
+  <!-- Bottom Target Card: Production-Grade Applications -->
+  <g transform="translate(195, 275)">
+    <rect width="550" height="78" rx="10" fill="url(#centerBg)" stroke="url(#prodBorder)" stroke-width="1.6"/>
+    <!-- Corner Crosshairs -->
+    <g stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.5">
+      <path d="M 10 10 L 10 16 M 7 13 L 13 13"/>
+      <path d="M 540 10 L 540 16 M 537 13 L 543 13"/>
+    </g>
+    <!-- Text -->
+    <text x="275" y="32" text-anchor="middle" class="mono" font-size="14" font-weight="800" fill="#f8fafc" letter-spacing="3px">
+      PRODUCTION-GRADE SCALABLE APPLICATIONS
+    </text>
+    <text x="275" y="56" text-anchor="middle" class="sans" font-size="11.5" font-weight="500" fill="#94a3b8" letter-spacing="1px">
+      Sub-100ms API Latency &#x2022; 99+ Core Web Vitals &#x2022; Zero Design-to-Code Debt
+    </text>
+  </g>
+</svg>

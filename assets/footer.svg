@@ -1,40 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="100%" height="100%">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" height="100%">
   <defs>
     <!-- Background Gradient -->
     <linearGradient id="footerBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#052822"/>
-      <stop offset="50%" stop-color="#07151e"/>
-      <stop offset="100%" stop-color="#04070d"/>
+      <stop offset="0%" stop-color="#04070d"/>
+      <stop offset="45%" stop-color="#07151e"/>
+      <stop offset="100%" stop-color="#052822"/>
     </linearGradient>
+
+    <!-- Subtle Radial Accent -->
+    <radialGradient id="footerGlow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#0d9488" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
 
     <!-- Border Gradient -->
     <linearGradient id="footerBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#1e293b"/>
-      <stop offset="35%" stop-color="#0d9488"/>
-      <stop offset="65%" stop-color="#2dd4bf"/>
+      <stop offset="30%" stop-color="#0d9488"/>
+      <stop offset="70%" stop-color="#2dd4bf"/>
       <stop offset="100%" stop-color="#1e293b"/>
     </linearGradient>
 
-    <!-- Grid Pattern -->
-    <pattern id="footerGrid" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#14b8a6" stroke-width="0.5" stroke-opacity="0.06"/>
+    <!-- Tech Grid Pattern -->
+    <pattern id="footerGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#14b8a6" stroke-width="0.5" stroke-opacity="0.08"/>
+      <circle cx="0" cy="0" r="0.8" fill="#2dd4bf" fill-opacity="0.15"/>
     </pattern>
   </defs>
 
   <style>
     .mono { font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', Consolas, monospace; }
-    .quote { font-size: 14px; fill: #cbd5e1; letter-spacing: 3px; font-weight: 500; }
-    .meta { font-size: 10px; fill: #64748b; letter-spacing: 2px; }
+    .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .quote { font-size: 13px; fill: #f1f5f9; letter-spacing: 3.5px; font-weight: 700; }
+    .subquote { font-size: 10px; fill: #2dd4bf; letter-spacing: 2.5px; font-weight: 600; }
+    .meta { font-size: 10px; fill: #64748b; letter-spacing: 1.8px; }
   </style>
 
   <!-- Container Box -->
-  <rect width="1198" height="108" x="1" y="1" rx="10" fill="url(#footerBg)"/>
-  <rect width="1198" height="108" x="1" y="1" rx="10" fill="url(#footerGrid)"/>
-  <rect width="1198" height="108" x="1" y="1" rx="10" fill="none" stroke="url(#footerBorder)" stroke-width="1.2"/>
+  <rect width="1198" height="118" x="1" y="1" rx="10" fill="url(#footerBg)"/>
+  <rect width="1198" height="118" x="1" y="1" rx="10" fill="url(#footerGlow)"/>
+  <rect width="1198" height="118" x="1" y="1" rx="10" fill="url(#footerGrid)"/>
+  <rect width="1198" height="118" x="1" y="1" rx="10" fill="none" stroke="url(#footerBorder)" stroke-width="1.4"/>
 
-  <!-- Centered Content -->
-  <g transform="translate(600, 52)" text-anchor="middle">
-    <text y="0" class="mono quote">CLEAN ARCHITECTURE &bull; INTENTIONAL DESIGN &bull; SCALABLE EXECUTION</text>
-    <text y="26" class="mono meta">DESIGNED &amp; ENGINEERED BY S SINDID AHMED NABIL &bull; 2026</text>
+  <!-- Corner Brackets -->
+  <g stroke="#2dd4bf" stroke-width="1" stroke-opacity="0.6">
+    <path d="M 15 22 L 15 15 L 22 15"/>
+    <path d="M 1185 22 L 1185 15 L 1178 15"/>
+    <path d="M 15 98 L 15 105 L 22 105"/>
+    <path d="M 1185 98 L 1185 105 L 1178 105"/>
   </g>
+
+  <!-- Top Accent Line -->
+  <line x1="40" y1="20" x2="1160" y2="20" stroke="#1e293b" stroke-width="0.8"/>
+  <line x1="520" y1="20" x2="680" y2="20" stroke="#2dd4bf" stroke-width="1.6"/>
+
+  <!-- Centered Content Block -->
+  <g transform="translate(600, 52)" text-anchor="middle">
+    <!-- Active Status Pulse -->
+    <g transform="translate(-240, -2)">
+      <circle cx="0" cy="0" r="3.5" fill="#10b981"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+    <text y="2" class="mono quote">CLEAN ARCHITECTURE // INTENTIONAL DESIGN // SCALABLE EXECUTION</text>
+    <g transform="translate(240, -2)">
+      <circle cx="0" cy="0" r="3.5" fill="#10b981"/>
+      <circle cx="0" cy="0" r="7" fill="none" stroke="#10b981" stroke-width="1" stroke-opacity="0.4"/>
+    </g>
+
+    <text y="28" class="mono subquote">FULL-STACK SOFTWARE ENGINEER &#x2022; MERN &amp; NEXT.JS SPECIALIST</text>
+    <text y="48" class="mono meta">ENGINEERED BY S SINDID AHMED NABIL &#x2022; DHAKA, BANGLADESH &#x2022; 2026</text>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <line x1="40" y1="104" x2="1160" y2="104" stroke="#1e293b" stroke-width="0.8"/>
+  <line x1="1000" y1="104" x2="1160" y2="104" stroke="#0d9488" stroke-width="1.2"/>
+  <line x1="40" y1="104" x2="200" y2="104" stroke="#0d9488" stroke-width="1.2"/>
 </svg>
